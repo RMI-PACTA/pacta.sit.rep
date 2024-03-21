@@ -1,5 +1,10 @@
-# pacta.sit.rep
-A simple situation report of the overall code health of the PACTA ecosystem.
+# pacta.sit.rep <img src="assets/images/logo.png" align="right" width="120" />
+<!-- badges: start -->
+
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
+<!-- badges: end -->
+
+This repository generates a simple situation report of the overall code health of the PACTA ecosystem.
 
 Code health is reported at the level of the R package, and at the level of the Transition Monitor Docker image. 
 
