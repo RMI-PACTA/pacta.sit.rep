@@ -24,12 +24,12 @@ generate_package_table <- function(repo_paths) {
 
   dplyr::transmute(
     out,
-    Repo = format_repo(repo),
-    Lifecycle = format_lifecycle(lifecycle),
-    Status = format_status(repo, status),
-    Latest_SHA = format_latest_sha(repo, sha),
-    Maintainer = format_maintainer(maintainer)
-    )
+    Repo = format_repo_v(repo),
+    Lifecycle = format_lifecycle_v(lifecycle),
+    Status = format_status_v(repo, status),
+    Latest_SHA = format_latest_sha_v(repo, sha),
+    Maintainer = format_maintainer_v(maintainer)
+  )
 }
 
 format_repo <- function(repo) {
@@ -37,21 +37,41 @@ format_repo <- function(repo) {
   glue::glue("[{repo_base}](https://github.com/{repo})")
 }
 
+format_repo_v <- Vectorize(format_repo)
+
 format_lifecycle <- function(lifecycle_badge) {
+  if (is.na(lifecycle_badge)) {
+    return("No lifecycle badge found.")
+  }
+
   desc <- "![Lifecycle]"
   link <- "https://lifecycle.r-lib.org/articles/stages.html"
 
   glue::glue("[{desc}({lifecycle_badge})]({link})")
 }
 
+format_lifecycle_v <- Vectorize(format_lifecycle)
+
 format_status <- function(repo, r_cmd_check_status) {
+
+  if (is.na(r_cmd_check_status)) {
+    return("No R CMD check found.")
+  }
+
   desc <- "![R-CMD-check]"
   link <- glue::glue("https://github.com/{repo}/actions/workflows/R-CMD-check.yaml")
 
   glue::glue("[{desc}({r_cmd_check_status})]({link})")
 }
 
+format_status_v <- Vectorize(format_status)
+
 format_latest_sha <- function(repo, sha) {
+
+  if (is.na(sha)) {
+    return("`main` branch not found.")
+  }
+
   short_sha <- substr(sha, 1, 7)
 
   glue::glue(
@@ -59,19 +79,36 @@ format_latest_sha <- function(repo, sha) {
   )
 }
 
+format_latest_sha_v <- Vectorize(format_latest_sha)
+
 format_maintainer <- function(maintainer) {
+
+  if (is.na(maintainer)) {
+    return("No maintainer found.")
+  }
+
   glue::glue(
     "[@{maintainer}](https://github.com/{maintainer}/)"
   )
 }
 
+format_maintainer_v <- Vectorize(format_maintainer)
+
 table_lifecycle <- function(repo_path) {
   readme <- fetch_readme(repo_path)
+
+  if (is.null(readme)) {
+    return(NA_character_)
+  }
 
   pattern <- "https://img.shields.io/badge/lifecycle-\\S+.svg"
 
   lifecycle_badge <- readme[grepl(pattern, readme)][1]
   lifecycle_badge <- gsub(".*(https[^)]*\\.svg).*", "\\1", lifecycle_badge)
+
+  if (length(lifecycle_badge) == 0) {
+    return(NA_character_)
+  }
 
   return(lifecycle_badge)
 }
@@ -87,16 +124,27 @@ table_status <- function(repo_path) {
 table_latest_sha <- function(repo_path) {
   latest_sha <- fetch_main_sha(repo_path)
 
+  if (is.null(latest_sha)) {
+    return(NA_character_)
+  }
+
   return(latest_sha)
 }
 
 table_maintainer <- function(repo_path) {
   codeowners <- fetch_codeowners(repo_path)
+  if (is.null(codeowners)) {
+    return(NA_character_)
+  }
 
   maintainer <- codeowners[!grepl("^#", codeowners)]
   maintainer <- maintainer[grepl("^*", maintainer)]
   maintainer <- maintainer[grepl("^.*@.*$", maintainer)]
   maintainer <- gsub("^.*@(.*)$", "\\1", maintainer)
+
+  if (length(maintainer) == 0) {
+    return(NA_character_)
+  }
 
   return(maintainer)
 }
