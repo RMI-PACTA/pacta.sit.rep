@@ -55,9 +55,28 @@ table_maintainer <- function(repo_path) {
   maintainer <- maintainer[grepl("^*", maintainer)]
   maintainer <- maintainer[grepl("^.*@.*$", maintainer)]
   maintainer <- gsub("^.*@(.*)$", "\\1", maintainer)
-  maintainer <- paste0("@", maintainer)
+
+  maintainer <- format_maintainer(maintainer)
 
   return(maintainer)
+}
+
+format_lifecycle <- function(lifecycle_badge) {
+
+}
+
+format_status <- function(r_cmd_check_status) {
+
+}
+
+format_latest_sha <- function(latest_sha) {
+
+}
+
+format_maintainer <- function(maintainer) {
+  glue::glue(
+    "[@{maintainer}](https://github.com/{maintainer}/)"
+  )
 }
 
 fetch_codeowners <- function(repo_path) {
