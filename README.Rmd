@@ -36,7 +36,7 @@ banks_repos <- c(
 )
 
 banks_table <- pacta.sit.rep::generate_package_table(banks_repos)
-knitr::kable(banks_table, caption = "Banks Packages")
+knitr::kable(banks_table)
 
 ```
 
@@ -56,7 +56,7 @@ transition_monitor_repos <- c(
 )
 
 tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
-knitr::kable(tm_table, caption = "Transition Monitor Packages")
+knitr::kable(tm_table)
 
 ```
 
