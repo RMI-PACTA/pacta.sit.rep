@@ -54,6 +54,7 @@ prod_tibble <- prod_checked |>
         codeowner_errors = x[["codeowner_errors"]],
         dep_tree = x[["dep_tree"]],
         lifecycle = x[["lifecycle_badge"]],
+        workflows = x[["workflows"]],
         private = x[["private"]],
         updated = x[["updated_at"]],
         open_issues = x[["open_issues_count"]],

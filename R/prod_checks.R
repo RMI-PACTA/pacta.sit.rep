@@ -19,6 +19,10 @@ prod_checks <- function(repo_json) {
     lifecycle_badge <- format_lifecycle(table_lifecycle(repo_json[["full_name"]]))
     repo_json[["lifecycle_badge"]] <- lifecycle_badge
   }
+  if (is.null(repo_json[["workflows"]])) {
+    workflows <- workflow_summary(repo_json[["full_name"]])
+    repo_json[["workflows"]] <- workflows
+  }
   return(repo_json)
 }
 if (requireNamespace("memoise")) {

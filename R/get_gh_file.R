@@ -32,3 +32,30 @@ get_gh_text_file <- function(repo_fullname, file_path) {
 if (requireNamespace("memoise")) {
   get_gh_text_file <- memoise::memoise(get_gh_text_file)
 }
+
+get_gh_dir_listing <- function(repo_fullname, dir_path) {
+  response <- tryCatch(
+    expr = {
+      gh::gh(
+        "/repos/{repo_fullname}/contents/{dir_path}", # nolint: non_portable_path
+        repo_fullname = repo_fullname,
+        dir_path = dir_path
+      )
+    },
+    error = function(cond) return(NULL)
+  )
+  if (is.null(response)) {
+    out <- NULL
+  } else {
+    out <- lapply(
+      response,
+      function(x) {
+        list(
+        name = x[["name"]],
+        path = x[["path"]]
+        )
+      }
+    )
+  }
+  return(out)
+}
