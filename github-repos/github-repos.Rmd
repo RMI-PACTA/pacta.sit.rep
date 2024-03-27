@@ -50,7 +50,7 @@ prod_tibble <- prod_checked |>
     FUN = function(x) {
       pruned <- list(
         repo = x[["full_name"]],
-        codeowners = x[["codeowners"]],
+        codeowner = x[["codeowner"]],
         codeowner_errors = x[["codeowner_errors"]],
         dep_tree = x[["dep_tree"]],
         lifecycle = x[["lifecycle_badge"]],

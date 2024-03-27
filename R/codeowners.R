@@ -1,6 +1,7 @@
 get_codeowner <- function(
   repo_fullname,
-  path = ".github/CODEOWNERS" # nolint: non_portable_path
+  path = ".github/CODEOWNERS", # nolint: non_portable_path
+  format = TRUE
 ) {
   raw_content <- tryCatch(
     expr = {
@@ -31,6 +32,9 @@ get_codeowner <- function(
     replacement = "",
     x = default_owner
   )
+  if (format) {
+    default_owner_clean <- paste0("@", default_owner_clean)
+  }
   return(default_owner_clean)
 }
 if (requireNamespace("memoise")) {
