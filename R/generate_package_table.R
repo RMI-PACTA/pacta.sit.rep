@@ -68,9 +68,9 @@ format_maintainer <- function(maintainer) {
 table_lifecycle <- function(repo_path) {
   readme <- fetch_readme(repo_path)
 
-  pattern <- "https://img.shields.io/badge/lifecycle-.*.svg"
+  pattern <- "https://img.shields.io/badge/lifecycle-\\S+.svg"
 
-  lifecycle_badge <- readme[grepl(pattern, readme)]
+  lifecycle_badge <- readme[grepl(pattern, readme)][1]
   lifecycle_badge <- gsub(".*(https[^)]*\\.svg).*", "\\1", lifecycle_badge)
 
   return(lifecycle_badge)

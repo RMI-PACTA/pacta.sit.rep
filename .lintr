@@ -1,0 +1,8 @@
+linters: all_linters()
+exclusions: list(
+    "tests/testthat.R",
+    "R/generate_package_table.R",
+    "R/repo_lists.R" = c(
+      nonportable_path_linter = Inf
+    )
+  )
