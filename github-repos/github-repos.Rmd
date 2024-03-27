@@ -37,7 +37,7 @@ active_repos <- active_repos[!sapply(active_repos, is.null)]
 ```
 
 
-```{r identify_prod_dependencies}
+```{r identify_prod_dependencies, include=FALSE}
 
 prod_checked <- lapply(active_repos, prod_checks)
 
@@ -57,11 +57,12 @@ prod_tibble <- prod_checked |>
         private = x[["private"]],
         updated = x[["updated_at"]],
         open_issues = x[["open_issues_count"]],
+        license = x[["license"]][["name"]],
         default_branch = x[["default_branch"]]
       )
       clean <- lapply(pruned, function(x) {
         if (is.null(x)) {
-          return(NA)
+          return(NA_character_)
         } else {
           return(x)
         }
@@ -75,6 +76,6 @@ prod_tibble <- prod_checked |>
   dplyr::bind_rows() |>
   dplyr::arrange(desc(dep_tree), repo)
 
-prod_tibble
+knitr::kable(prod_tibble)
 
 ```
