@@ -14,12 +14,54 @@
 #' @examples
 #' generate_package_table(c("RMI-PACTA/r2dii.data", "RMI-PACTA/r2dii.match"))
 generate_package_table <- function(repo_paths) {
-  tibble::tibble(
-    Repo = repo_paths,
-    Lifecycle = purrr::map_chr(repo_paths, table_lifecycle),
-    Status = purrr::map_chr(repo_paths, table_status),
-    Latest_SHA = purrr::map_chr(repo_paths, table_latest_sha),
-    Maintainer = purrr::map_chr(repo_paths, table_maintainer)
+  out <- tibble::tibble(
+    repo = repo_paths,
+    lifecycle = purrr::map_chr(repo_paths, table_lifecycle),
+    status = purrr::map_chr(repo_paths, table_status),
+    sha = purrr::map_chr(repo_paths, table_latest_sha),
+    maintainer = purrr::map_chr(repo_paths, table_maintainer)
+  )
+
+  dplyr::transmute(
+    out,
+    Repo = format_repo(repo),
+    Lifecycle = format_lifecycle(lifecycle),
+    Status = format_status(repo, status),
+    Latest_SHA = format_latest_sha(repo, sha),
+    Maintainer = format_maintainer(maintainer)
+    )
+}
+
+format_repo <- function(repo) {
+  repo_base <- gsub(".*/", "", repo)
+  glue::glue("[{repo_base}](https://github.com/{repo})")
+}
+
+format_lifecycle <- function(lifecycle_badge) {
+  desc <- "![Lifecycle]"
+  link <- "https://lifecycle.r-lib.org/articles/stages.html"
+
+  glue::glue("[{desc}({lifecycle_badge})]({link})")
+}
+
+format_status <- function(repo, r_cmd_check_status) {
+  desc <- "![R-CMD-check]"
+  link <- glue::glue("https://github.com/{repo}/actions/workflows/R-CMD-check.yaml")
+
+  glue::glue("[{desc}({r_cmd_check_status})]({link})")
+}
+
+format_latest_sha <- function(repo, sha) {
+  short_sha <- substr(sha, 1, 7)
+
+  glue::glue(
+    "[`{short_sha}`](https://github.com/{repo}/commits/main)"
+  )
+}
+
+format_maintainer <- function(maintainer) {
+  glue::glue(
+    "[@{maintainer}](https://github.com/{maintainer}/)"
   )
 }
 
@@ -56,27 +98,7 @@ table_maintainer <- function(repo_path) {
   maintainer <- maintainer[grepl("^.*@.*$", maintainer)]
   maintainer <- gsub("^.*@(.*)$", "\\1", maintainer)
 
-  maintainer <- format_maintainer(maintainer)
-
   return(maintainer)
-}
-
-format_lifecycle <- function(lifecycle_badge) {
-
-}
-
-format_status <- function(r_cmd_check_status) {
-
-}
-
-format_latest_sha <- function(latest_sha) {
-
-}
-
-format_maintainer <- function(maintainer) {
-  glue::glue(
-    "[@{maintainer}](https://github.com/{maintainer}/)"
-  )
 }
 
 fetch_codeowners <- function(repo_path) {
