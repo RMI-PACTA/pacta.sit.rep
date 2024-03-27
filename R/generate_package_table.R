@@ -24,11 +24,11 @@ generate_package_table <- function(repo_paths) {
 
   dplyr::transmute(
     out,
-    Repo = format_repo_v(repo),
-    Lifecycle = format_lifecycle_v(lifecycle),
-    Status = format_status_v(repo, status),
-    Latest_SHA = format_latest_sha_v(repo, sha),
-    Maintainer = format_maintainer_v(maintainer)
+    Repo = format_repo_v(.data[["repo"]]),
+    Lifecycle = format_lifecycle_v(.data[["lifecycle"]]),
+    Status = format_status_v(.data[["repo"]], .data[["status"]]),
+    Latest_SHA = format_latest_sha_v(.data[["repo"]], .data[["sha"]]),
+    Maintainer = format_maintainer_v(.data[["maintainer"]])
   )
 }
 

@@ -17,4 +17,5 @@ Imports:
     gh,
     glue,
     purrr,
+    rlang,
     tibble
