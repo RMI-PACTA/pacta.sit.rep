@@ -3,28 +3,13 @@ get_codeowner <- function(
   path = ".github/CODEOWNERS", # nolint: non_portable_path
   format = TRUE
 ) {
-  raw_content <- tryCatch(
-    expr = {
-      raw_content <- gh::gh(
-        "GET /repos/{repo}/contents/{path}", # nolint: non_portable_path
-        repo = repo_fullname,
-        path = path
-      )
-    },
-    error = function(e) {
-      NA_character_
-    }
-  )
-  if (identical(raw_content, NA_character_)) {
-    # Early return
-    return(NA_character_)
+  content <- get_gh_text_file(repo_fullname, file_path = path)
+  if (is.null(content)) {
+    return(NULL)
   }
-  content_b64 <- raw_content[["content"]]
-  content_char <- rawToChar(base64enc::base64decode(content_b64))
-  content_words <- strsplit(content_char, "\n", fixed = TRUE)[[1L]]
   default_owner <- grep(
     pattern = "^\\s*\\*\\s+@\\S+",
-    x = content_words,
+    x = content,
     value = TRUE
   )
   default_owner_clean <- gsub(
