@@ -69,7 +69,7 @@ format_status_v <- Vectorize(format_status)
 format_latest_sha <- function(repo, sha) {
 
   if (is.na(sha)) {
-    return("No SHA found.")
+    return("`main` branch not found.")
   }
 
   short_sha <- substr(sha, 1, 7)
