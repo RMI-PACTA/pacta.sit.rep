@@ -62,7 +62,7 @@ format_status <- function(repo, r_cmd_check_status) {
   desc <- "![R-CMD-check]"
   link <- glue::glue(
     "https://github.com/{repo}/actions/workflows/R-CMD-check.yaml"
-    )
+  )
 
   glue::glue("[{desc}({r_cmd_check_status})]({link})")
 }
