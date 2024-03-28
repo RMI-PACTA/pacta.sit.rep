@@ -16,8 +16,27 @@ prod_checks <- function(repo_json) {
     repo_json[["dep_tree"]] <- dep_tree
   }
   if (is.null(repo_json[["lifecycle_badge"]])) {
-    lifecycle_badge <- format_lifecycle(table_lifecycle(repo_json[["full_name"]]))
+    lifecycle_badge <- format_lifecycle(
+      table_lifecycle(repo_json[["full_name"]])
+    )
     repo_json[["lifecycle_badge"]] <- lifecycle_badge
+  }
+  if (is.null(repo_json[["has_docker"]])) {
+    repo_json[["has_docker"]] <- !is.null(
+      get_gh_text_file(repo_json[["full_name"]], "Dockerfile")
+    )
+  }
+  if (is.null(repo_json[["has_R"]])) {
+    repo_json[["has_R"]] <- !is.null(
+      get_gh_dir_listing(repo_json[["full_name"]], "R")
+    )
+  }
+  expected_workflows <- NULL
+  if (repo_json[["has_R"]]) {
+    expected_workflows <- c(expected_workflows, "R.yml")
+  }
+  if (repo_json[["has_docker"]]) {
+    expected_workflows <- c(expected_workflows, "docker.yml")
   }
   if (is.null(repo_json[["workflows"]])) {
     workflows <- workflow_summary(repo_json[["full_name"]])

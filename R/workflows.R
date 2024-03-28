@@ -28,13 +28,15 @@ parse_workflow <- function(workflow) {
       if (is.null(job[["uses"]])) {
         return(NA_character_)
       } else {
-        return(
-          grep(
-            pattern = "RMI-PACTA/actions", # nolint: non_portable_path
-            x = job[["uses"]],
-            value = TRUE
-          )
+        out <- grep(
+          pattern = "RMI-PACTA/actions", # nolint: non_portable_path
+          x = job[["uses"]],
+          value = TRUE
         )
+        if (length(out) == 0L) {
+          return(NA_character_)
+        }
+        return(out)
       }
     },
     FUN.VALUE = character(1L)
@@ -71,7 +73,14 @@ workflow_summary <- function(
       is_expected <- FALSE
       details <- NULL
     } else {
-      checks_main <- "main" %in% workflows[[wf]][["triggers"]][["push"]]
+      if (
+        !("push" %in% names(workflows[[wf]][["triggers"]])) ||
+          is.null(workflows[[wf]][["triggers"]][["push"]])
+        ) {
+        checks_main <- FALSE
+      } else {
+        checks_main <- "main" %in% workflows[[wf]][["triggers"]][["push"]]
+      }
       checks_prs <- "pull_request" %in% names(workflows[[wf]][["triggers"]])
       standard_checks <- checks_main && checks_prs
       uses_correct_rmi_actions <- grepl(

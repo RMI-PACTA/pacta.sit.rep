@@ -54,7 +54,8 @@ prod_tibble <- prod_checked |>
         codeowner_errors = x[["codeowner_errors"]],
         dep_tree = x[["dep_tree"]],
         lifecycle = x[["lifecycle_badge"]],
-        workflows = x[["workflows"]],
+        standard_workflows = x[["workflows"]][["all_standard"]],
+        main_protected = x[["enabled_rules"]][["protect-main.json"]],
         private = x[["private"]],
         updated = x[["updated_at"]],
         open_issues = x[["open_issues_count"]],
@@ -78,5 +79,18 @@ prod_tibble <- prod_checked |>
   dplyr::arrange(desc(dep_tree), repo)
 
 knitr::kable(prod_tibble)
+
+```
+
+```{r nice_output}
+
+prod_tibble |>
+  dplyr::select(-lifecycle) |>
+  gt::gt() |>
+  gt::opt_interactive(
+    use_pagination = FALSE,
+    use_filter = TRUE,
+    use_search = TRUE
+  )
 
 ```
