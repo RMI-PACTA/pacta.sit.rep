@@ -1,6 +1,6 @@
 Package: pacta.sit.rep
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person("Jackson", "Hoffart", , "jackson.hoffart@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8600-5042"))
@@ -13,7 +13,9 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
+    dplyr,
     gh,
     glue,
     purrr,
+    rlang,
     tibble

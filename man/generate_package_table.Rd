@@ -7,7 +7,8 @@
 generate_package_table(repo_paths)
 }
 \arguments{
-\item{repo_paths}{A character vector with GH paths to the R package repositories}
+\item{repo_paths}{A character vector with GH paths to the R package
+repositories}
 }
 \value{
 A tibble with the following columns:
