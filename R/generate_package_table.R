@@ -1,6 +1,7 @@
 #' Generate a table with R package information
 #'
-#' @param repo_paths A character vector with GH paths to the R package repositories
+#' @param repo_paths A character vector with GH paths to the R package
+#'   repositories
 #'
 #' @return A tibble with the following columns:
 #' * Repo
@@ -59,7 +60,9 @@ format_status <- function(repo, r_cmd_check_status) {
   }
 
   desc <- "![R-CMD-check]"
-  link <- glue::glue("https://github.com/{repo}/actions/workflows/R-CMD-check.yaml")
+  link <- glue::glue(
+    "https://github.com/{repo}/actions/workflows/R-CMD-check.yaml"
+    )
 
   glue::glue("[{desc}({r_cmd_check_status})]({link})")
 }
@@ -114,8 +117,9 @@ table_lifecycle <- function(repo_path) {
 }
 
 table_status <- function(repo_path) {
-  r_cmd_check_status <-   glue::glue(
-    "https://github.com/{repo_path}/actions/workflows/R-CMD-check.yaml/badge.svg"
+  r_cmd_check_status <- glue::glue(
+    "https://github.com/{repo_path}",
+    "/actions/workflows/R-CMD-check.yaml/badge.svg"
   )
 
   return(r_cmd_check_status)
