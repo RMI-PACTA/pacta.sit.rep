@@ -26,7 +26,7 @@ parse_workflow <- function(workflow) {
     X = jobs,
     FUN = function(job) {
       if (is.null(job[["uses"]])) {
-        return(NULL)
+        return(NA_character_)
       } else {
         return(
           grep(

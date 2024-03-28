@@ -23,6 +23,10 @@ prod_checks <- function(repo_json) {
     workflows <- workflow_summary(repo_json[["full_name"]])
     repo_json[["workflows"]] <- workflows
   }
+  if (is.null(repo_json[["enabled_rules"]])) {
+    enabled_rules <- check_actions_rulesets(repo_json[["full_name"]])
+    repo_json[["enabled_rules"]] <- enabled_rules
+  }
   return(repo_json)
 }
 if (requireNamespace("memoise")) {
