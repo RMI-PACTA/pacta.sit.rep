@@ -51,6 +51,7 @@ transition_monitor_repos <- c(
   "RMI-PACTA/pacta.portfolio.import",
   "RMI-PACTA/pacta.portfolio.audit",
   "RMI-PACTA/pacta.portfolio.allocate",
+  "RMI-PACTA/pacta.portfolio.report",
   "RMI-PACTA/pacta.executive.summary",
   "RMI-PACTA/pacta.portfolio.utils"
 )
