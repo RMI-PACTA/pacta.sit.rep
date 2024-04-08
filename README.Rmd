@@ -61,6 +61,19 @@ knitr::kable(tm_table)
 
 ```
 
+### PACTA for Supervisors
+
+``` {r echo = FALSE, results = "asis"}
+transition_monitor_repos <- c(
+  "RMI-PACTA/pacta.multi.loanbook.analysis",
+  "RMI-PACTA/pacta.multi.loanbook.plot"
+)
+
+tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
+knitr::kable(tm_table)
+
+```
+
 ## Transition Monitor Docker Build Status
 
 | Commit time          | Git sha                                  | Project code | Holdings date | Language | Peer group    | Report                                                                                                                                                                                                                                      | Image                                                                                   |
