@@ -51,8 +51,22 @@ transition_monitor_repos <- c(
   "RMI-PACTA/pacta.portfolio.import",
   "RMI-PACTA/pacta.portfolio.audit",
   "RMI-PACTA/pacta.portfolio.allocate",
+  "RMI-PACTA/pacta.portfolio.report",
   "RMI-PACTA/pacta.executive.summary",
   "RMI-PACTA/pacta.portfolio.utils"
+)
+
+tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
+knitr::kable(tm_table)
+
+```
+
+### PACTA for Supervisors
+
+``` {r echo = FALSE, results = "asis"}
+transition_monitor_repos <- c(
+  "RMI-PACTA/pacta.multi.loanbook.analysis",
+  "RMI-PACTA/pacta.multi.loanbook.plot"
 )
 
 tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
