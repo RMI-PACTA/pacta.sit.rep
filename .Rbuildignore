@@ -4,3 +4,4 @@
 ^assets$
 ^README\.Rmd$
 ^\.github$
+^\.lintr$
