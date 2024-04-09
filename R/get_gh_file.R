@@ -51,8 +51,8 @@ get_gh_dir_listing <- function(repo_fullname, dir_path) {
       response,
       function(x) {
         list(
-        name = x[["name"]],
-        path = x[["path"]]
+          name = x[["name"]],
+          path = x[["path"]]
         )
       }
     )

@@ -4,8 +4,8 @@ list_is_subset <- function(x, y) {
     all(vapply(x, function(x_elem) {
       any(vapply(y, function(y_elem) {
         list_is_subset(x_elem, y_elem)
-      }, logical(1)))
-    }, logical(1)))
+      }, logical(1L)))
+    }, logical(1L)))
   } else {
     identical(x, y)
   }

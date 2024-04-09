@@ -1,6 +1,8 @@
 identify_gh_deps <- function(repo_fullname) {
   deps <- tryCatch(
-    expr = {pak::pkg_deps(repo_fullname)},
+    expr = {
+      pak::pkg_deps(repo_fullname)
+    },
     error = function(e) {
       NULL
     }
@@ -38,8 +40,8 @@ identify_if_dep <- function(
   for (i in seq_along(dep_lists)) {
     if (
       repo_fullname %in% dep_lists[[i]] ||
-      repo_fullname %in% repos_to_check[[i]]
-      ) {
+        repo_fullname %in% repos_to_check[[i]]
+    ) {
       dep_levels <- c(names(dep_lists)[i], dep_levels)
     }
   }

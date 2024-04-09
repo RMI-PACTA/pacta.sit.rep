@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(
+knitr::opts_chunk[["set"]](
   echo = TRUE,
   cache = TRUE
 )
@@ -33,7 +33,11 @@ active_repos <- all_repos |>
     }
   )
 #remove null elements
-active_repos <- active_repos[!sapply(active_repos, is.null)]
+active_repos <- active_repos[!vapply(
+  X = active_repos,
+  FUN = is.null,
+  FUN.VALUE = logical(1L)
+)]
 ```
 
 
@@ -92,5 +96,4 @@ prod_tibble |>
     use_filter = TRUE,
     use_search = TRUE
   )
-
 ```

@@ -76,7 +76,7 @@ workflow_summary <- function(
       if (
         !("push" %in% names(workflows[[wf]][["triggers"]])) ||
           is.null(workflows[[wf]][["triggers"]][["push"]])
-        ) {
+      ) {
         checks_main <- FALSE
       } else {
         checks_main <- "main" %in% workflows[[wf]][["triggers"]][["push"]]
@@ -102,9 +102,10 @@ workflow_summary <- function(
     )
   }
   workflow_summary[["all_standard"]] <- all(
-    sapply(
-      workflow_summary,
-      function(x) x[["standard"]]
+    vapply(
+      X = workflow_summary,
+      FUN = function(x) x[["standard"]],
+      FUN.VALUE = logical(1L)
     )
   )
   return(workflow_summary)
