@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+inst/extdata/*_cache
+inst/extdata/*.html
+!inst/extdata/*.[Rr][Mm][Dd]
