@@ -98,15 +98,15 @@ format_maintainer <- function(maintainer) {
 format_maintainer_v <- Vectorize(format_maintainer)
 
 table_lifecycle <- function(repo_path) {
-  readme <- fetch_readme(repo_path)
+  readme <- get_gh_text_file(repo_path, file_path = "README.md")
 
   if (is.null(readme)) {
     return(NA_character_)
   }
 
-  pattern <- "https://img.shields.io/badge/lifecycle-.*.svg"
+  pattern <- "https://img.shields.io/badge/lifecycle-\\S+.svg"
 
-  lifecycle_badge <- readme[grepl(pattern, readme)]
+  lifecycle_badge <- readme[grepl(pattern, readme)][1]
   lifecycle_badge <- gsub(".*(https[^)]*\\.svg).*", "\\1", lifecycle_badge)
 
   if (length(lifecycle_badge) == 0) {
@@ -136,7 +136,7 @@ table_latest_sha <- function(repo_path) {
 }
 
 table_maintainer <- function(repo_path) {
-  codeowners <- fetch_codeowners(repo_path)
+  codeowners <- get_gh_text_file(repo_path, file_path = ".github/CODEOWNERS")
   if (is.null(codeowners)) {
     return(NA_character_)
   }
@@ -153,22 +153,6 @@ table_maintainer <- function(repo_path) {
   return(maintainer)
 }
 
-fetch_codeowners <- function(repo_path) {
-  response <- tryCatch(
-    gh::gh(
-      "/repos/{repo}/contents/.github/CODEOWNERS",
-      repo = repo_path,
-      ref = "main"
-    ),
-    error = function(cond) return(NULL)
-  )
-
-  if (!is.null(response)) {
-    return(readLines(response$download_url))
-  }
-  return(NULL)
-}
-
 fetch_main_sha <- function(repo_path) {
   response <- tryCatch(
     gh::gh(
@@ -180,21 +164,6 @@ fetch_main_sha <- function(repo_path) {
 
   if (!is.null(response)) {
     return(response$commit$sha)
-  }
-  return(NULL)
-}
-
-fetch_readme <- function(repo_path) {
-  response <- tryCatch(
-    gh::gh(
-      "/repos/{repo}/contents/README.md",
-      repo = repo_path
-    ),
-    error = function(cond) return(NULL)
-  )
-
-  if (!is.null(response)) {
-    return(readLines(response$download_url))
   }
   return(NULL)
 }

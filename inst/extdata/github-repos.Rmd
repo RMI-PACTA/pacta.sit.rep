@@ -1,0 +1,99 @@
+---
+title: "GitHub repo details"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk[["set"]](
+  echo = TRUE,
+  cache = TRUE
+)
+```
+
+```{r get_repos}
+
+org <- "RMI-PACTA"
+all_repos <- get_repos(org)
+
+```
+
+```{r active_repos}
+active_repos <- all_repos |>
+  lapply(
+    FUN = function(x) {
+      if (x[["archived"]] || x[["disabled"]]) {
+        return(NULL)
+      } else {
+        return(x)
+      }
+    }
+  )
+#remove null elements
+active_repos <- active_repos[!vapply(
+  X = active_repos,
+  FUN = is.null,
+  FUN.VALUE = logical(1L)
+)]
+```
+
+
+```{r identify_prod_dependencies, include=FALSE}
+
+prod_checked <- lapply(active_repos, prod_checks)
+
+```
+
+```{r identify_prod_essential}
+
+prod_tibble <- prod_checked |>
+  lapply(
+    FUN = function(x) {
+      pruned <- list(
+        repo = x[["full_name"]],
+        codeowner = x[["codeowner"]],
+        codeowner_errors = x[["codeowner_errors"]],
+        dep_tree = x[["dep_tree"]],
+        lifecycle = x[["lifecycle_badge"]],
+        standard_workflows = x[["workflows"]][["all_standard"]],
+        main_protected = x[["enabled_rules"]][["protect-main.json"]],
+        private = x[["private"]],
+        updated = x[["updated_at"]],
+        open_issues = x[["open_issues_count"]],
+        license = x[["license"]][["name"]],
+        default_branch = x[["default_branch"]]
+      )
+      clean <- lapply(pruned, function(x) {
+        if (is.null(x)) {
+          return(NA_character_)
+        } else {
+          return(x)
+        }
+      })
+      return(clean)
+    }
+  ) |>
+  lapply(
+    FUN = tibble::as_tibble
+  ) |>
+  dplyr::bind_rows() |>
+  dplyr::arrange(desc(dep_tree), repo)
+
+knitr::kable(prod_tibble)
+
+```
+
+```{r nice_output}
+
+prod_tibble |>
+  dplyr::select(-lifecycle) |>
+  gt::gt() |>
+  gt::opt_interactive(
+    use_pagination = FALSE,
+    use_filter = TRUE,
+    use_search = TRUE
+  )
+```
