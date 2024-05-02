@@ -59,12 +59,7 @@ format_status <- function(repo, r_cmd_check_status) {
     return("No R CMD check found.")
   }
 
-  desc <- "![R-CMD-check]"
-  link <- glue::glue(
-    "https://github.com/{repo}/actions/workflows/R-CMD-check.yaml"
-  )
-
-  glue::glue("[{desc}({r_cmd_check_status})]({link})")
+  r_cmd_check_status
 }
 
 format_status_v <- Vectorize(format_status)
@@ -117,10 +112,11 @@ table_lifecycle <- function(repo_path) {
 }
 
 table_status <- function(repo_path) {
-  r_cmd_check_status <- glue::glue(
-    "https://github.com/{repo_path}",
-    "/actions/workflows/R-CMD-check.yaml/badge.svg"
-  )
+  repo_path <- "RMI-PACTA/r2dii.data"
+
+  readme <- get_gh_text_file(repo_path, file_path = "README.md")
+
+  r_cmd_check_status <- readme[grepl("R.yml|R-CMD-check.yaml", readme)]
 
   return(r_cmd_check_status)
 }
