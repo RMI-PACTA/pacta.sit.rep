@@ -116,6 +116,10 @@ table_status <- function(repo_path) {
 
   r_cmd_check_status <- readme[grepl("R.yml|R-CMD-check.yaml", readme)]
 
+  if (is.null(r_cmd_check_status) | length(r_cmd_check_status) == 0) {
+    return(NA_character_)
+  }
+
   return(r_cmd_check_status)
 }
 
