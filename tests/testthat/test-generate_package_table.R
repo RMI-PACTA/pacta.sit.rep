@@ -1,7 +1,7 @@
 library(testthat)
 library(dplyr)
 
-pacta_r_package_path <- "https://github.com/RMI-PACTA/pacta.r.package"
+pacta_r_package_path <- "RMI-PACTA/pacta.r.package"
 
 test_that("returns correct structure and data", {
   result <- generate_package_table(pacta_r_package_path)
