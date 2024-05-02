@@ -47,7 +47,9 @@ format_docker_v <- Vectorize(format_docker)
 table_docker <- function(repo_path) {
   readme <- get_gh_text_file(repo_path, file_path = "README.md")
 
-  docker_status <- readme[grepl("docker.yml|build-Docker-image-triggers.yml", readme)]
+  docker_action_names <- "docker.yml|build-Docker-image-triggers.yml"
+
+  docker_status <- readme[grepl(docker_action_names, readme)]
 
   return(docker_status)
 }
