@@ -112,8 +112,6 @@ table_lifecycle <- function(repo_path) {
 }
 
 table_status <- function(repo_path) {
-  repo_path <- "RMI-PACTA/r2dii.data"
-
   readme <- get_gh_text_file(repo_path, file_path = "README.md")
 
   r_cmd_check_status <- readme[grepl("R.yml|R-CMD-check.yaml", readme)]
