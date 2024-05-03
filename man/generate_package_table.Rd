@@ -16,6 +16,7 @@ A tibble with the following columns:
 \item Repo
 \item Lifecycle
 \item Status
+\item Test_Coverage
 \item Latest_SHA
 \item Maintainer
 }
