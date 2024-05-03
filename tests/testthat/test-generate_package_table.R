@@ -8,7 +8,7 @@ test_that("returns correct structure and data", {
   expected_names <- c("Repo", "Lifecycle", "Status", "Latest_SHA", "Maintainer")
 
   expect_true(tibble::is_tibble(result))
-  expect_equal(ncol(result), 5)
+  expect_equal(ncol(result), 6)
   expect_true(all(expected_names %in% names(result)))
 })
 
