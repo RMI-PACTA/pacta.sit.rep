@@ -7,6 +7,7 @@
 #' * Repo
 #' * Lifecycle
 #' * Status
+#' * Test_Coverage
 #' * Latest_SHA
 #' * Maintainer
 #'
@@ -19,6 +20,7 @@ generate_package_table <- function(repo_paths) {
     repo = repo_paths,
     lifecycle = purrr::map_chr(repo_paths, table_lifecycle),
     status = purrr::map_chr(repo_paths, table_status),
+    coverage = purrr::map_chr(repo_paths, table_coverage),
     sha = purrr::map_chr(repo_paths, table_latest_sha),
     maintainer = purrr::map_chr(repo_paths, table_maintainer)
   )
@@ -28,6 +30,7 @@ generate_package_table <- function(repo_paths) {
     Repo = format_repo_v(.data[["repo"]]),
     Lifecycle = format_lifecycle_v(.data[["lifecycle"]]),
     Status = format_status_v(.data[["repo"]], .data[["status"]]),
+    Test_Coverage = format_coverage_v(.data[["repo"]], .data[["coverage"]]),
     Latest_SHA = format_latest_sha_v(.data[["repo"]], .data[["sha"]]),
     Maintainer = format_maintainer_v(.data[["maintainer"]])
   )
@@ -63,6 +66,17 @@ format_status <- function(repo, r_cmd_check_status) {
 }
 
 format_status_v <- Vectorize(format_status)
+
+format_coverage <- function(repo, test_coverage) {
+
+  if (is.na(test_coverage)) {
+    return("No test coverage found.")
+  }
+
+  test_coverage
+}
+
+format_coverage_v <- Vectorize(format_coverage)
 
 format_latest_sha <- function(repo, sha) {
 
@@ -121,6 +135,16 @@ table_status <- function(repo_path) {
   }
 
   return(r_cmd_check_status)
+}
+
+table_coverage <- function(repo_path) {
+
+  badge_link <- glue::glue("(https://codecov.io/gh/{repo_path}/branch/main/graph/badge.svg)")
+  cov_link <- glue::glue("(https://app.codecov.io/gh/{repo_path}?branch=main)")
+
+  test_coverage <- glue::glue("[![Codecov test coverage]{badge_link}]{cov_link}")
+
+  return(test_coverage)
 }
 
 table_latest_sha <- function(repo_path) {
