@@ -29,10 +29,16 @@ jobs:
         run: |
           Rscript -e 'pak::local_install(".")'
 
-      - name: Render README.Rmd file and Commit Results
+      - name: Render README.Rmd file
         run: |
           Rscript -e 'rmarkdown::render("README.Rmd")'
-          git config --local user.name "$GITHUB_ACTOR"
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit README.md -m 'Re-build Rmarkdown files' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: GH - Render README
+          title: GH - Render README
+          body: GH action to re-knit the README.Rmd 
+          base: main
+          labels: ci/cd
+          branch: nightly_readme_build
+          delete-branch: true
