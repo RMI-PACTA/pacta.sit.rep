@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+<h1 id="pactasitrep-">pacta.sit.rep
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAAEXCAYAAABI0vTLAAAAAXNSR0IB2cksfwAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAuIwAALiMBeKU/dgAACiZpQ0NQaWNtAAB4nJ2Wd1RU1xaHz713eqHNMHQYeq9SBhDpHaRXURhmBhjKAMMM2AsiKhBRRKQpggQFDBgNRWJFFAsBUQF7QIKAEoNRbKhkRtZKfHl57+Xl98c939pn73P32XvftS4AJC8/Li8dlgIgjSfgB3u60COjounYfgADPMAAcwCYrKwM/xCPUCCSt7srPUvkBP5Fr4cBJF5vGXsF0ung/5M0K4MvAAAKFPESNieLJeI8EafmCDLE9lkRU+NTxAyjxMwXJShieTEnLrLRZ59FdhIzO43HFrE45wx2GlvMPSLekS3kiBjxE3F+NpeTI+LbItZKFaZxRfxWHJvGYWYBgCKJ7QIOK0nEZiIm8UODXUW8FAAcKfELjv+CBZzVAvGlXNMz1vC5iUkCuh5Ln25ua8uge3FyUjkCgXEgk5XC5LPprulpGUzeGgAW7/xZMuLa0kVFtja3tbY2tjAx/6JQ/3Xzb0rc20V6GfS5ZxCt7w/bX/ml1wHAmBPVZvcftvgKADq2ASB/7w+b1iEAJEV9ax/44j408bwkCQQZdqamOTk5JlwOy0Rc0N/1Px3+hr54n4n4uN/LQ3fjJDCFqQK6uG6s9NR0IZ+elcFkcejGfx7ifxz413kYBXMSOHwOTxQRLpoyLi9R1G4emyvgpvPoXN5/auI/DPuTFudaJEr9J0CNNQFSA1SA/NwHUBQiQGIOinag3/vmhw8HgaI1Qm1yce4/C/r3U+Fi8SOLm/g5zjU4lM4S8rMX98SfJUADApAEVKAAVIEm0APGwALYAHvgBNyBDwgAoSAKrAIskATSAB/kgPVgC8gHhWA32AcqQQ2oB42gBZwAHeA0uAAug+vgBhgC98EomADPwCx4DeYhCMJCZIgCKUBqkDZkCFlADGgZ5A75QcFQFBQHJUI8SAith7ZChVAJVAnVQo3Qt9Ap6AJ0FRqE7kJj0DT0K/QeRmASTIVVYB3YFGbAzrAvHAqvhBPhTHgtnAfvgsvhOvgY3A5fgK/DQ/Ao/AyeQwBCRGiIOmKMMBBXJACJRhIQPrIRKUDKkDqkBelCepFbyCgyg7xDYVAUFB1ljLJHeaHCUCxUJmojqghViTqKakf1oG6hxlCzqE9oMloZbYi2Q3ujI9GJ6Bx0ProM3YBuQ19CD6En0K8xGAwNo4uxwXhhojDJmHWYIswBTCvmPGYQM46Zw2KxClhDrAM2AMvECrD52ArsMew57E3sBPYtjohTw1ngPHDROB4uF1eGa8Kdxd3ETeLm8VJ4bbwdPgDPxq/BF+Pr8V34AfwEfp4gTdAlOBBCCcmELYRyQgvhEuEB4SWRSNQg2hKDiFziZmI58TjxCnGM+I4kQzIguZJiSELSLtIR0nnSXdJLMpmsQ3YiR5MF5F3kRvJF8iPyWwmKhImEtwRbYpNElUS7xE2J55J4SW1JZ8lVkmslyyRPSg5IzkjhpXSkXKWYUhulqqROSY1IzUlTpM2lA6TTpIukm6SvSk/JYGV0ZNxl2DJ5ModlLsqMUxCKJsWVwqJspdRTLlEmqBiqLtWbmkwtpH5D7afOysrIWsqGy66WrZI9IztKQ2g6NG9aKq2YdoI2THsvpyLnLMeR2ynXIndT7o28kryTPEe+QL5Vfkj+vQJdwV0hRWGPQofCQ0WUooFikGKO4kHFS4ozSlQleyWWUoHSCaV7yrCygXKw8jrlw8p9ynMqqiqeKhkqFSoXVWZUaapOqsmqpapnVafVKGrL1LhqpWrn1J7SZenO9FR6Ob2HPquurO6lLlSvVe9Xn9fQ1QjTyNVo1XioSdBkaCZolmp2a85qqWn5a63Xata6p43XZmgnae/X7tV+o6OrE6GzXadDZ0pXXtdbd61us+4DPbKeo16mXp3ebX2MPkM/Rf+A/g0D2MDKIMmgymDAEDa0NuQaHjAcNEIb2RrxjOqMRoxJxs7G2cbNxmMmNBM/k1yTDpPnplqm0aZ7THtNP5lZmaWa1ZvdN5cx9zHPNe8y/9XCwIJlUWVxewl5iceSTUs6l7ywNLTkWB60vGNFsfK32m7VbfXR2saab91iPW2jZRNnU20zwqAyAhlFjCu2aFsX2022p23f2VnbCexO2P1ib2yfYt9kP7VUdylnaf3ScQcNB6ZDrcPoMvqyuGWHlo06qjsyHescHztpOrGdGpwmnfWdk52POT93MXPhu7S5vHG1c93get4NcfN0K3Drd5dxD3OvdH/koeGR6NHsMetp5bnO87wX2svXa4/XiLeKN8u70XvWx8Zng0+PL8k3xLfS97GfgR/fr8sf9vfx3+v/YLn2ct7yjgAQ4B2wN+BhoG5gZuD3QZigwKCqoCfB5sHrg3tDKCGxIU0hr0NdQotD74fphQnDusMlw2PCG8PfRLhFlESMRppGboi8HqUYxY3qjMZGh0c3RM+tcF+xb8VEjFVMfszwSt2Vq1deXaW4KnXVmVjJWGbsyTh0XERcU9wHZgCzjjkX7x1fHT/LcmXtZz1jO7FL2dMcB04JZzLBIaEkYSrRIXFv4nSSY1JZ0gzXlVvJfZHslVyT/CYlIOVIykJqRGprGi4tLu0UT4aXwutJV01fnT6YYZiRnzGaaZe5L3OW78tvyIKyVmZ1Cqiin6k+oZ5wm3Ase1l2VfbbnPCck6ulV/NW960xWLNzzeRaj7Vfr0OtY63rXq++fsv6sQ3OG2o3QhvjN3Zv0tyUt2lis+fmo1sIW1K2/JBrlluS+2prxNauPJW8zXnj2zy3NedL5PPzR7bbb6/ZgdrB3dG/c8nOip2fCtgF1wrNCssKPxSxiq59Zf5V+VcLuxJ29RdbFx/cjdnN2z28x3HP0RLpkrUl43v997aX0ksLSl/ti913tcyyrGY/Yb9w/2i5X3lnhVbF7ooPlUmVQ1UuVa3VytU7q98cYB+4edDpYEuNSk1hzftD3EN3aj1r2+t06soOYw5nH35SH17f+zXj68YGxYbCho9HeEdGjwYf7Wm0aWxsUm4qboabhc3Tx2KO3fjG7ZvOFuOW2lZaa+FxcFx4/Om3cd8On/A90X2ScbLlO+3vqtsobQXtUPua9tmOpI7RzqjOwVM+p7q77Lvavjf5/shp9dNVZ2TPFJ8lnM07u3Bu7bm58xnnZy4kXhjvju2+fzHy4u2eoJ7+S76Xrlz2uHyx17n33BWHK6ev2l09dY1xreO69fX2Pqu+th+sfmjrt+5vH7AZ6Lxhe6NrcOng2ZuONy/ccrt1+bb37etDy4cGh8OG74zEjIzeYd+Zupt698W97Hvz9zc/QD8oeCj1sOyR8qO6H/V/bB21Hj0z5jbW9zjk8f1x1vizn7J++jCR94T8pGxSbbJxymLq9LTH9I2nK55OPMt4Nj+T/7P0z9XP9Z5/94vTL32zkbMTL/gvFn4teqnw8sgry1fdc4Fzj16nvZ5/U/BW4e3Rd4x3ve8j3k/O53zAfij/qP+x65PvpwcLaQsLvwH3hPP7KNrNcgAAZQFJREFUeNrt3Xl8VfWd//H3+9wEwh5EFBJarUqrdaEawpqwOG2nttYRQqwLCWAVl9q6jdrWVtFWrTquxYXgCCZuMwHtWPtjbGeK5CZBJNHqlLF1q1YJuJVF1iT3fH5/aKetVUjg5H7uPff9/KePKjn39b1IuOeTc76HEBGRbqtIJufS7LtGHgiz34O8ZWl5eY13l4iIiIhIrqJ3gIhItpmRTN4B4NyP/vMQuPaR8vLLvftERERERHKRBhwiIt1QkUx+kcCvPu7fGWAWhlMemTy5wbtTRERERCTXBN4BIiLZYsry5QUwu/uT/j0BBkFQU7lmTS/vVhERERGRXKMBh4hIFw1JJK4kefBuftnnwg0bdJuKiIiIiEia6RYVEZEuqGxuPtJSqVYA+bv7tWa2E3l5X1g6YcLvvLtFRERERHKFruAQEdkdM4apVA26MNwAAJK90dmpJ6qIiIiIiKSRBhwiIrsxo7HxHALjuvM1JMtnNDSc4d0uIiIiIpIrdIuKiMgunNDYWJQfhi+QHNjdrzVgQxgEhz46ceLb3usQEREREYk7XcEhIrILvcLwzj0ZbgAAgcGJzs7bvNcgIiIiIpILdAWHiMgnqGhoOJHko3t7nBRw3KPl5f/pvR4RERERkTjTgENE5GOc0Ng4oFcYvgCyeG+PZWavvT9o0BG/HDVqq/e6RERERETiSreoiIh8jHyz66IYbgAAyQMHbN58tfeaRERERETiTFdwiIh8REUyOZZAM6IcApulLC+vdOmECc96r09EREREJI50BYeIyF+Zsnx5HsxqEPX3RzKBzs57YKbvuyIiIiIiPUAftEVE/sqQvLyLSR7VE8cmeUxFMnm+9xpFREREROJIt6iIiHzoxKamg/NSqd+CLOixFzHbwiA4vL6s7I/e6xURERERiRNdwSEi8qG8VGpBjw43AIDsH4bhnd5rFRERERGJGw04REQATG9oqAL5D+l4LZJfm5FMVnqvWUREREQkTnSLiojkvGmrVg0Jdu78Hcl90/WaFobrgn79DqsfPXqT9/pFREREROJAV3CISM5LtLffnM7hBgAwCIbbtm3Xe69dRERERCQudAWHiOS0aU1NxwZh+F90+H5ogJlZ+SOTJjV5vw8iIiIiItlOV3CISM6asnx5QSKVWuAx3AAAAiSwsHLNml7e74WIiIiISLbTgENEctaQROJKkId4NpA8zN577zLv90JEREREJNvpFhURyUmVzc1HWirVCiDfu8XMdqbIo35WXv6id4uIiIiISLbSFRwiknvMGKZSNciA4QYAkOydB9R4d4iIiIiIZDMNOEQk58xobDyHwDjvjo+YXJFMnu4dISIiIiKSrXSLiojklBMaG4vyw/AFkgO9W/6O2Z8IHFo/adI73ikiIiIiItlGV3CISE7JN5ufkcMNACD3CYFbvTNERERERLKRruCQ9CiZm1/Ye+d4WDCkk3xpS/O9v/VOktwzvbHxhMDsP7w7disI/nHJxIm/9M4QEREREckmGnBIjxsw8fTP5YXhz0Ae+ud/ZobHN2LLSVhZv927T3LDCY2NA3qF4Qsgi71bdseAV4NE4oj6CRP050NEREREpIt0i4r0qAFjqofkheF///VwAwBIHF/IfnXefZI78s2uy4bhBgAQOCjs7LzKu0NEREREJJtowCE9KpFI3PxJJ5UEKwaNn13p3SjxV5FMjiVwjndHN11Y2dT0Be8IEREREZFsoQGH9JhBE+YcC1jVrn5NANw2uGTuIO9Wia8py5fnwawGWfb9jmRemEothFlWdYuIiIiIeNEHZ+kZh3y7Nw0LSO56nxdyOHq1X++dK/E1JC/vYpJHeXfsCZKjKxobz/PuEBERERHJBhpwSI8YNPT9K0gc0pVfa8DcAePnTPBulvipSCYPInCld8feoNk10596aoR3h4iIiIhIptOAQyLXv3TW4QQv6eqvJ8k84B4cXtnLu11ixuxuAH28M/YK2Z/t7Xd6Z4iIiIiIZDoNOCRqzM8Lakjkd++rcFjhwH6XecdLfExvaKgi+SXvjiiQ/HrFihUV3h0iIiIiIpmMe38Ikb8YNG722UHAu/bkaw3YmepMHfX+07Uveq9Dstu0VauGBDt3/o7kvt4tUTGgbVt+/mHLxo3b7N0iIiIiIpKJdAWHRKZvyczhAfmTPf16Ar0TiUSN9zok+yXa22+O03ADAAgU9e3o2OM/XyIiIiIicacBh0SmV6+8+SD26pGvJCYXjp99uvdaJHtNa2o61oCqvT9S5iFwVmVT03jvDhERERGRTKQBh0SicNysE0hOj+RgxL/0n1C1n/eaJPsc99JLvROp1ALG9/a7IEylFpa0tHRvjxsRERERkRygAYfsvcMr+5O8I6rDERycj8Rt3suS7NNn/forQHbp8cTZiuThB27ffql3h4iIiIhIptGAQ/Za4aB+14IcEe1RefLA8bO/4r02yR7TmpqOCIAuP544m9HsBxUrVoz07hARERERySQacMheGThhdimAc3vi2AFwF0rm9vVeo2QBMwZhuBDo5uOJsxVZAHKBd4aIiIiISCbRgEP2QmUiMC4kmOiJo5M8sLBXx1Xeq5TMN6Ox8RwC47w70onk1IrGxlneHSIiIiIimUIDDtljg8b3u4jEqB59EdqFheOrj/Zeq2SuExobi8zsOu8OF2F409eXL4/V43BFRERERPaUBhyyRwaNqfpMAM7r6df54OqQxD3APP23Kh8r32w+yYHeHR5IDumVSNzi3SEiIiIikgl00ih7JEjk3QUiLftjkDimcNzr53uvWTLP9MbGEwhM8+7wRHJmRTL5Re8OERERERFv9A6Q7DN4/OxTQT6Q3le1LQjCwzc01v7Re/2SGSqXL+8fJhIvMPIn+GQfM3vlvVTqiCenTt3h3SIiIiIi4kVXcEi3DBz/zX2MvDX9r8z+CIO7vNcvmcMSiWs13PgAyYOHJBJXeneIiIiIiHjSgEO6JWDqJgJDfV6dXx00bs43vN8D8VeRTI4F+S3vjkxC8uKKhoajvDtERERERLxowCFdVjhu9hQYXB9LSeK2wi/MLvR+L8TPlOXL82BWA33/+qh8AgthpvdFRERERHKSPghL1xzy7d4gFpB03beFxP7sixu83w7xMyQv72KSulLh45BjKpqazvXOEBERERHxoAGHdEnhvlt+QPKz3h0AYIYzBo89vcy7Q9KvIpk8iID2mtiVMLy2srm52DtDRERERCTdNOCQ3eo/ruow0C717vgzkkQQLsThlb28WyTNzO4G0Mc7I5ORHGCdnXd4d4iIiIiIpJsGHLJb+UwsJJlZwwTy0MKB/S/3zpD0mdHYeBrJL3l3ZAXynyoaGk70zhARERERSSfX/RQk8w2acPrcALbAu+PjGLAzZfaF91cu/p13i/SsaatWDUns3PkCSKcn+GQhs7XtQXDYY2Vl73uniIiIiIikg67gkE/Ut2Tm8MAsYzf0JNA7QdR4d0jPS7S336zhRjeRxflm13lniIiIiIikiwYc8ol69cq/HcQg745dIVg+aNycM7w7pOdMa2o61oAq745sROCcimRyrHeHiIiIiEg66BYV+ViDx885HsTPvTu6wmAbOjrw+a2rF6/3bpFoHffSS737rVv3W5CHeLdkKzN7/r1UquTJqVM7vVtERERERHqSruCQv3dUVT8Ad3pndBXBwb3yeJt3h0Svz/r1V2i4sXdIHjUkkfiOd4eIiIiISE/TgEP+TmG/xDUgPuXd0S3ESQPHzv6qd4ZEp6Kx8fAAuMS7IybO9Q4QEREREelpGnDI3xg0dlYJiPO8O/ZEEPDOD68+kWxnRoRhDYB875Q4ILCvd4OIiIiISE/TgEP+SmWCARcSTHiX7AkSBxT2y/uRd4fsvenJ5NkkJ3h3xIUBL3o3iIiIiIj0NA045P8UTuh7AcmjvTv2Cu07g8bOKvHOkD13QmNjEYGfeHfECnm3d4KIiIiISE/TgEMAAIUTvnkAjVd5d+wtggkGXAhUZuVVKALkm80nOdC7Iy4MaFpaXn6vd4eIiIiISE/TgEMAALRwAchY7F9B8ujCCX0v8O6Q7pve2HgCgWneHbFh1h6G4ZneGSIiIiIi6aABh2Dg+DmngPhH744o0XhV4YRvHuDdIV1XuXx5f4bhHd4dsULe8OjkyS94Z4iIiIiIpIMGHDluUNmpgwPard4dkSP70VLadyCLWCJxLckR3h1xYcCLW4cN+7F3h4iIiIhIumjAkeOY6nUjwf28O3pmcfzKwPFzTvHOkN2b3tRUCuBc7464MMAInLVs5Mid3i0iIiIiIulC7wDxUzhh1iQYnyQZ2/8ODPa2Be2Hbmp8cIN3i3y8KcuX5w1JJFpIjvJuiZFFS8rLT/eOEBERERFJJ13BkasOr+xFBDVxHm4AAMH9mOp1o3eHfLIheXkXa7gRHQPe3g5c7N0hIiIiIpJuGnDkqMKB/S8H8DnvjjQ5vXDCrEneEfL3KpLJgwhc6d0RMxf8orxcVyyJiIiISM7RgCMHDRg/+1AQl3l3pAtJEkENDvl2b+8W+QizuwH08c6ICzN7Yml5+UPeHSIiIiIiHjTgyEEJooZArp3sf65w3y0/8I6Qv5jR2HgayS95d8SFmW0LzM7x7hARERER8aIBR44ZNOH0uQTLvTtc0C7tP67qMO8MASqbm/dBGN7i3REz8+onT/6Dd4SIiIiIiBcNOHJIv9LZw4jweu8OLyR75TOx0LtDgLCz8yaQQ7074sLMngvKy2/27hARERER8aQBRw7plcfbCBZ6d7giJw6acPpc74xcNr2xcSrIWd4dsWGWCshv1pMp7xQREREREU8acOSIgWNnfxXESd4dmSAwu6Fvyczh3h256LiXXuodhGENgVg/njidjJxfX17e6t0hIiIiIuJNA45ccFRVvyDgnd4ZGYMY1KtX/u3eGbmoz/r1V4A8xLsjLszsjfcHDrzcu0NEREREJBNowJEDCvsnriZxgHdHJiExY/D4Ocd7d+SSisbGwwPgEu+OOCFw7i9Hjdrq3SEiIiIikgk04Ii5wvHVRwM437sjQ92Jo6r6eUfkBDMiDGsA5HunxIUBS5ZMmvR4lMf88nPP9atoaDhqelOTBqIiIiIiknU04Ii1eQGQuIdgwrskIxGfKuyXuMY7IxdUNDScRXKCd0dsmG0ys+9EecgZyeS8gZs3v0PyuSAMX6toaHi6srHxc95LFRERERHpKg04Yqxw3OvnkzjGuyOjEecNnDC71DsjzqY3NAwn+RPvjlghL3tk0qR1UR1uRkPDDwFcCaDPX16CpWEY/urE5csLvZcrIiIiItIVGnDEVOGEbx5A2o+8OzIdwURgXAhU6iqXHhIA80EO8u6ICwOalpSXL4jqeJXNzUeC/OHH/TuSn0rk5d3gvWYRERERka7I8w6QnkFL3QVS+0t0AYlRg8b3u2jTStzo3RI30xsbT4DZdO+O2DBrD83OjPB4DBsba7jrvVHOqGxsrK0vK2v0Xr6IiPy94tLT/sGQ+BLNBnu3RMkM6xmEDWtXP/Df3i3S84pGVx9N2FcBfgowevfsLQPbwfD19s7OB9999uE2755ckvX/8cjfGzRuzjeCAA97d2QVw7Yw1XnEpqfr/uCdEheVy5f3DxOJF0iO8G6JkR8vKS//4d4f5gMzkslzAdyxu19nZi8EQ4Z8of7ww9u93wDJQIdX9irq2/s0GseBiNUJVi4wQweBLQC2GbkTITYQtsmIjSG4KRFg485U+FpBr50b31xZv927V/5ixPjKPtZRUA/ya94tPcmAx9vCgulorenwbpGeMby06k4aziYZw3NT244Qs9a21tV7l3ySEeMr+4TtBaciwFgChd493WZ4D8SqtWGfB9Ba0xHD/4hyW+EXZheiD39HYn/vlqxjeGLDykVf8c6IixkNDbeD/LZ3R1wY8OK2YcOOWjZy5M4ojndCY2NRfhi+QHJg1wLsiiWTJum2N/kb+4w9bWBBKlhOUvs95QAzexfk6zR7LSReo+EPNHstNL667k+JP+C1xTu8G3NJ0eiq60le6t2RDgZb2La6bq53h0SvaHT1eSR+6t3Ro8zaOwMc+lYG/iC1qOSUfcm8X4M80rtlbxnQuiNIHasBR8wMnjC7BmB0l7DnmjCcueGp+x7wzsh205uaSoNUaiWoJ/hEwT64VvPYJeXlT0Z1zIpk8hEC07rcYLYzCIJR9WVlv/d+PyRzDC+tujMAz/HuEH8GS8H4Emn/E4K/o6EVTDzTtnrRG95tcVU0uuqPJD/l3ZEuKUPl+pbaJd4dEp39jqk+Kj+BVQAKvFt6moX4bltr7fXeHR9VNLrqAZKnendExcx+qj04YmTw2NPLzMIz4nhxV7pYENwycPw3l21e+a9/8m7JVpVmiTCZXKjhRnQILI5yuDG9sfEEmnV5uAEAJHuHYbgQwCTv90MyBwHtsSMAPti0G8ShAA8NPvgHAFIoGl31DshGg60243+vfzd4Xld6RIQo8k5IpwSspqik+um21to/erfI3hsxvrJP2GEPA4z9cAMAEISF3gkfh2S8/h4nK/UUlbg4vLIXAquJ571r6UNgaMDUTd4d2SxMJi8iOcq7Iy4MeHs7cHFUxzuhsXFAEIZ37snXkiyf0dBwhvd7IhnEONQ7QTIbyaEEpgXgtQliVfHQcEPR6KpfFpXO/Of9R1cd4d2XzYgc+0ECORgB6oB5On+JgbCz4DaSh3l35LKhh1f2R8yunqGhj75BxEThwH6XgdA3iSgYZhWOmz3FOyMbVSSTB5G8yrsjZi74RXn5hqgOlm92HcjiPf16I2+Y1tS0n/ebIpmB1OPmpdsKSH6JCG7MI/+neHT12qLSqkXDj6mehkOO6+0dJ5mNwKTikpe/790he2fY6OoZ1C317lL9e8Xy7/BYLirXDBhT/VmQl3t3xAVJgqjBId/WB63uMrsbQB/vjLgwsyeWlpc/FNXxKpLJsQT2ar8EAoMTnZ23eb83IhITRBHB2UECjxQV7vte0ejqh4tKq76uYYd8Egs4r3hM9XjvDtkzRSXVn07Aarw7JL404IiBRF5wDwF9EIgQyZGDhr5/hXdHNpnR2HgayS95d8SFmW0LzCLbvHHK8uV5MKtBFN/3g+DkacmknjgkIpEi2Y/ENwg+Vlw49K3i0VULio85bZx3l2QWggkL8eA+Y0/r2lPAJIPMC0A8CFKPFJceowFHlhs0bs4ZBMu9O+KI4CX9S2cd7t2RDSqbm/dBGN7i3REz8+onT47scWJD8vIuJnlUVMcLzO7+8nPP9fN5a0Qk9ohBIOcikVhZNLr6heKSmefohFb+jMSBBanE3d4d0j3DS1+dR2Kid4fEmwYcWaz/hKr9GNgN3h1xRSI/Py+owYd7wcsnCzs7bwK12WBkzH4TlJffHNXhKpLJgwhcGWUiyQMGbN58dfrfHBHJNSQORRDcWZAK1g4vrfqXIaOq93gfIYkPEqcUj55Z7d0hXTO8dNYkwrR/ivQ4DTiyWD4StxG6xKtHERMGjZt9lndGJpuRTE4BOcu7IzbMUiTPqCdTUR2SH9yaEvneKDQ7v6K5+ei0vj8ikrNI9g/Aiwvy7dWi0VX3FI+p/qx3k/gyBvP3K5l1sHeH7NqgI08dHCB8IOee/CMuNODIUgPHz/4KwJO9O3JBQP6k78TTc+pZ81113Esv9TZgAXWVS2SMnF9fXt4a1fGmNzRUgfyHHoklE+jsvAdm+rtERNKH7EXymxbihaLRVQ8NP6ZKT5HLUQQG5AXhQyiZm+/dIp+sX+/EvQBHeHdIbtCH0mxUMrdvANzlnZEziEG9QpvvnZGJ+q5f/0MC+glaRMzsjfcHDozsiUjTVq0aQiCyW10+DsljKpLJ83v+3RER+VskApInM4Hni0qrFw4tnT3Mu0nSj2BpUbDjR94d8vGKS6rOJnmid4fkDg04slBhr46rSB7o3ZFLSEwrHDfrBO+OTFLR2Hg4gUu9O+KEwLm/HDVqa1THS7S330xy3zSk/2h6U9MBaXgdEZG/QzCPwBn5lnqpaHTVpfppfg4yXDKspHqqd4b8rWGlsw5H0LM/aBH5KA04skzhhNlfAO0C745cRPIOHF7Z37sjI5gRYVgDQB8iI2LAkiWTJj0e1fGmNTUda0BVOtpJ9gtSKV1VJiKuSPYneX1RsP03xcdUHevdI+lDIkgQ94/4fOU+3i3yoQNnFwSwfwMY+R5gIruiAUdWmRcAXEgwz7skJ5EjCgf1u9Y7IxNUNDScRXKCd0dsmG0ys+9Edbgpy5cXJFKp9O6NQh43vbHxG2l7PRGRT0Dw8xbgv4pHV903uKRykHePpAlRFPYtWOSdIR8YPjR1M4HDvTsk92jAkUUKx71+PoHR3h057tyB4+aM9Y7wNL2hYTjJn3h3xImRlz4yadK6qI43JJG4EuQh6V4Hw/C2E5cvL0z364qIfBRJgqzuG/RZM7xk1pe9eyQ9SJ5QXFJ1tndHrisaXf1PAXiOd4fkJg04ssTgsupPM7CrvTtyHcFEQKvBlCk5exUNydtB6idiETGgaWl5eU1Ux6tsbj6S5MUeayG5fyIv7waP1xYR+QTFZPifRaXVPwEq9YjKXBDg5mFHn/Z574xcVTz2tBGk3evdIblLA45sEQZ3AtT+DxmA5FGD2g90OYH0NqOh4XgCM7w7YsOsPQzDMyM8HsNUyntvlDNmNDaWO76+iMjfIEkClxWVFizf9+iT9dj32GOfRCJ4GIcc19u7JPfMCyxMPABQe6GIGw04ssCg8bMrAX7Nu0P+IjBcOaj09IO8O9Kpcvny/qbHE0eLvOHRyZNfiOpwMxobzyEwznVJAGG2sHLNml6eHSIiH0WwvFci/zfDj5mpIWzckUcWFe57o3dGrikuffVyApO8OyS3acCR4QaXzB0UALd5d8hHkH2YF97tnZFOlkhcS3KEd0dcGPDi1mHDfhzV8U5obCwys+u81/Whz4UbNlzuHSEi8lEkhzLBXw8vrYru6jnJVOcVl8zUDwjTpKh05gSDXendIaIBR6br1X49yOHeGfL3SH6pcMLstDyG09v0pqZSAOd6d8SFAUbgrGUjR+6M6pj5ZneQHOi9tv8ThpdVNDcf6p0hIvJRBPMCsKa4pEpPRosxkjRy0X5HnLK/d0vcFX5hdiGMDxLUPjfiTgOODDZg/JwJBsz17pBdMNw8YEz1EO+MnlRplmAqtRDUX1oRWrSkvPzJqA5W0dBwIoETvRf110j2RmdnZJuniohELuD3ikqraoB5+jwcUySH5hXk1Xl3xF2/vHAhyQO8O0QADTgyV8nc/Dxg4Qf7YkmmIrlvIpG42bujJ4XJ5EUkR3l3xIUBb+8A/jmq453Q2DiAwHzvdX0ckuUzGhrO8O4QEfkkBM8sKn2lVkOO+CL5peLSqpzcHD4dhpdWnQlqA3rJHPpmnqEG9955KQg94iorWNWgCXOO9a7oCZUrVnwGwDzvjpi54Bfl5RuiOli+2XUgi70X9UkMuLHy6aeHeXeIiHwSgqcVlb7yrwD0Q6W4Mlw7vGTmMd4ZcVNUMvtQGm/17hD5axpwZKABY6o/awh+6N0hXUOSNCzAlNkF3i1RC8m7SPb17ogLM3tiaXn5Q1EdryKZHEvgHO917QrJwnDnTm2ULCIZjeDs4aVVd3h3SA8he5F8sKhkrj7TROWQ43qT4b+R0HsqGUUDjgyUSCRqCOjZ3VmExCGDdyJWO0fPaGw8jeQ/enfEhZltC8wiG0ZMWb48D2Y1yILv4wROqmhs/Kp3h4jIrgTgOcWjqyJ7upVkFpKfA3f81LsjLooKh/4LiKO8O0Q+KuM/GOeawvGzTycx2btDus/AiwePn32kd0cUKpub90EY3uLdETPz6idP/kNUBxuSn//PJLPng0UY3vnl557r550hIrJL5OXFJdWzvDOkZ5A4vbikqtK7I9sVH1N9PGDf8u4Q+TgacGSQ/kfPGQrwRu8O2TMk8kHUIAb38IadnTeBHOrdERtmvwnKyyPbjPbEpqaDGYZZdcUQyQP6b9r0I+8OEZHdotUMP2ZmuXeG9BBiQVFJ9ae9M7LVviUzh1sCi/UgBMlUGnBkkPwCu5XEPt4dsjc4bvCE2Rm9J8LuzEgmp4DUT6+iYpYieUY9mYrqkHmp1AKQWbfnSwB8pzKZLPHuEBHZJbIXE1yy3xGn7O+dIj2AHIzA7teTc/bEvKA3gwcIDPEuEfkk+oOdIQZNmPVlkKd6d0gEDNf1GV+dsU+12JXjXnqptwELGIOrUDKFkfPry8tbozre9IaGKpD/4L2uPUImQrOFlWYJ7xQRkV0huF9+n7wHdRIcTwTLi0tfvdy7I9sUlb56KYip3h0iu6Jv2plgfGUfIrjLO0MiQg7szURW7sTeb/36HxD4rHdHXJjZG+8PHBjZB6hpq1YNIRDZrS4eSB5tjY0XeHeIiOwejy0ufeVC7wrpGQa7snhM9Xjvjmyxf0nVWMB0q6lkPA04MsBg9p9H4CDvDokOgX8qHD/7RO+O7pi2YsVhMLvUuyNOCJz7y1GjtkZ1vER7+80k9/Ve194ys6umNzUd4N0hIrI7BvykaHT10d4dEj2CCQvx4OCSykHeLZlun7GnDUyQDxPM824R2R0NOJwVjjl9lMEu8u6Q6BGYj4mnD/Du6BIzBuQ9IHt5p8SFAUuWTJr0eFTHq0gmv2hAlfe6okCyX5BK6ao1Ecl4BPNALNStKvFE4sA+LLjbuyPTFaSCBSQO9O4Q6Qp9s3Y1L0Ce3aNpaEyRxYVheJ13RldUNDScRXKCd0dcmNlGM/tOVMebsnx5AczujtXeKORxFcnkKd4ZIiK7Q6CkuOTVC7w7pGeQPLl49Mxq745MVVQ6cw7Jk707RLpKAw5HhRNeP4/AaO8O6Uk8Z8CEzL6/c3pDw3CSP/HuiBXyskcmTVoX1eGGJBJXkjzYe1k94NavJZODvSNERHbHaFcNLZ09zLtDeoaBdww9ZuYh3h2ZpnhM9Wdh/Kl3h0h3aMDhpM/Y00YQdo13h/QsEkEeEjWYMiVjr9IheTtI3X8aEQOalpaX10R1vMrm5iNJXuy9rp5AYL8Csxu9O0REdodk/3wL9bktpkj2z0/wQZTMzfduyRglc/MtxMMk+3mniHSHBhxOegf5dwLs790haXHE4J2fucQ74uPMaGg4nsAM747YMGsPw/DMCI/HMJWqARDfD1zk6dNXrJjknSEi0gWzh5XOOtw7QnoGwdKiYIeeEvKhYm6/gYQ22JWsowGHg0ETZlWQ/Lp3h6QR7YpBE2Zl1C0GX37uuX4G3OndESvkDY9OnvxCVIeb0dh4DoFx3svqSQQYBEFN5Zo12uBWRDIaiSAw+6F3h/QgwyXFx1Qd653hbdjoqq8acL53h8ie0IAj3caeNjBAcLt3hqQbC2hc4F3x1wZs3nwNyU95d8SFAS9uHTbsx1Edr7K5udjMcmVvlM+l3nvvB94RIiK7RasY9oXZB3pnSM8gESDA/SM+X7mPd4uXoaWzhwXEIpLx2dhccooGHGk2ONHrJwCKvDsk/Uj+Q+G4ObO8OwBgelNTKc3O8+6ICwOMwFnLRo7cGdkxOzvvIJkdjxmOQABcNm3FisO8O0REdoVgXpCf+r53h/QgcnjYt2CRd4aXfAvrCO7n3SGypzJ248M4GjCherwZztI8NIfRbhpQcsov3m996F2vhEqzRJhMLgSZ8H47YsPs3iWTJj0Z1eEqGhpOBPlP3stKK7JXQC4EUOadIrkrhN21bnXdud4dUdv/qKp+O4NEPgDkJTr7JBIsCFI2mAEKQmMhjUVBgOEAhhhwMMwOJnAQyN7e7RnJcMrgkspLNrTWb/JOkZ5B8oTikpnnrG29/y7vlnQqGl11KYkveneI7A0NONKlZG5+HjpqQF01k8tIDkn0LrgFQJVXQ5hMXkRylPd7ERcGvL2DjGwT2RMaGwcwDOd7r8sDgYkVyeTcKJ9CIyLAW8/Xbf2r/7vxw//9w26+jMOPPvXTzMsbSdgoMxxDYBzIg7zX441k/74sOGMDcJN3i/SggDcNO/q0FeuffeB/vVPSYVjpaaU0aJNVyXo62U6Twb13XgrgCO8O8Udg5qBxp7tMxytXrPgMgHne70HMXPCL8vINUR0s3+w6kMXei3Jjdn3l008P884QEdi6Zx98vW117X+tXV13U1tL3WlrW+oONiQ+HcLOMrP/MNhm70i3N8cQ3ROzJEOxTyIRPIxDjov9lUz7fu70AQlLPARSG35L1tOAIw0Gjp09EqA20JP/wyC8G1NmF6T7dUPyLpJ9vdcfF2b2xNLy8oeiOl5FMjmWwDne6/JEstB27tRGzCIZqm31ojfWra6raWupO7Gt3xtDLAynwbDMYCnvtnQi+bmi0dV6hGbckUcWFe4b+yt1eg3suAtERj3tT2RPacCRBkECCwCm/WRWMhfBgwe386p0vmZFMnkKyX/0XntcmNm2wCyyYcSU5cvzYHYP9H0ZACpnNDQc7x0hIrvx5JOdba33/2xtS+1Xw47EIQjtOtj/3QITewbM9G6QtDi3uGTm17wjesrw0uqZBE/z7hCJij5I97DCcXNmEZzq3SGZx2AXDR5bfVQ6XutryeRgALd6rzlm5tVPnry7e9i7bN9E4hKSuo3tQwbc+eXnnuvn3SEiXbP+N4tfW9ta9/1ttv3A0HAzzNq9m3paAOTWZtA5iiSNXDS0dHbsbp8ceszMQwjc6d0hEiUNOHrQgJJT9gUt9pe1yZ4hmGdBsBCY1+N/DgvMbiagR35FxMyeDcrLb47qeCc2NR0M4ArvdWUSkp8asHnzNd4dItI9G1rrN61rqb0YAY80s0bvnh5FHFxceuoXvDOk55Ecmm9hnXdHpErm5ucn+BCBnHkkveQGDTh6UKJ3wS0kh3h3SOYiOWbw+Nd79JGEM5LJKSBnea81NsxSAXlmPRnZ/eZ5qdQCULexfRTNzqtMJku8O0Sk+9Y+XftiW/83psLsGjMz756eEiJxnHeDpAeJLxaVzvxn746oFGH7tQRHe3eIRE0Djh4yaNzpX6TuzZSuIK7tN/aM/Xvi0Me99FJvAxYQoPcy48LI+fXl5a1RHW96Q0MVyH/wXldGIhOh2cJKs4R3iojsgSef7FzbUveDEDzJzLbu/QEzT2DQ3lY5hMZrhpfMPMa7Y28NL5n1ZRAXe3eI9AQNOHrClNkFDMK7vTMkawzolUhd1BMH7rd+/Q8IfNZ7gXFhZm+8P3Dg5VEdb9qqVUMIRHarSxyRPDpMJnvkz4eIpMf6ltolMH4ljkMOA0ZjypQ87w5JE7IXg+Ch/Y+qyto9ovY/qmo/BnYfSf3wS2JJA44eMHgnriSoRy1Jl5nZuKiPOW3FisNgdqn32uKEwLm/HDUqsg/owc6dt5Lc13tdWWBe5YoVn/GOEJE919Za2xgavx63zUdJ9hu2tViPi80hBD6b6MWsfZx5ojfuIxC7DVNF/kwDjogNHlt9lBGxuT9P0mZn1AcMgmAhyF7eC4sLA5YsmTTp8aiOV5FMfpGkbmPrApJ9Q/Iu7w4R2TvrW2uXm8XvM1Ii1D4GuYbE6cUlVZXeHd1VXFJ9EcGveHeI9CQNOCI1L7AgWEhQlypK9xh+HuXhKpLJuQQmei8rLsxso5l9J6rjTVm+vABmuo2tG0j+Y0UyeYp3h4jsnbbWup8a7D+9OyLFYJR3gjgga4pKqj/tndFVw0tmHgPadd4dIj1NA44IDR7/+rkkx3h3SHYxw8sb39+6IKrjTW9oGE6zG7zXFSvkZY9MmrQuqsMNSSSuJHUb2x649WvJ5GDvCBHZOx0p+zbMIr9y0YsBR3g3iAOiELQHgHkZfz61/1FV/YKAD+vKXskFGf8HMlv0GV9dDOJa7w7JLmZmRpyFNfWR3ZNM8naQg7zXFhcGNC0tL6+J6niVzc1HktTO5XuAwH59gJu8O0Rk77zzzP0vGxHZYN8dcZR3gvggWVZU+soPvDt2J9GbdwAc6d0hkg4acESkNxN3ABjg3SHZhnWbmhf9OqqjzWhoOJ7ADO9VxYZZexiGZ0Z4vCBMpWoA5HsvLVsZMHtGMjnFu0NE9lbevxis07siCgQGjPh85T7eHeLmiqLSmRO8Iz5J0ejqUwjM8u4QSRcNOCJQOH72iQT+ybtDsouZvZtKRfd42C8/91w/A+70XleskDc8OnnyC1EdbkZT0ykEIn9iTi4hQAMWHPfSS729W0Rkz7WtXvQGDJFt3Oyts18v3XaYowgmYMEDg0sqM+7q2f3HVH0G1J5fkls04NhbE08fQGC+d4ZkIeKi95+ufS+qww3YvPkakp/yXlZcGPDi1mHDfhzpMc10dU0ECHy23/r1GX9JsIjsGg0PejdEJZFK7O/dIH5IHNiHBZk1SJgyJS8v5MMEB3qniKSTBhx7qTAMrwNZ7N0h2cXMfrWxeXFdVMerTCZLaHae97riwgALzOYuGzky0k3waFbovbbYMLt02ooVh3lniMie29Ke+i8zhN4dUTCaBhw5juTJxaVVs707/qxo64gfgdDDDyTnaMCxFwaOnT0O4DneHZJlzLZbZ3B2VIerNEuEZgtBJryXFhtm99ZPmrQi8sMCT3kvLTbIXgF5D8zonSIie2bT/zy4AURktwF6IrS5twBm+OnQY2Ye4t1RfEzVsbDgUu8OEQ8acOypKVPyEgkuJPUeSveExFWbVt/7amTHSyYvInm097riwoC3d5CX9MSxg4KC22C2yXuNcUFyQkVDw1neHSKy52j2jHdDFMLA9AhrAcn++Qk+hJK5bpuJF5Wcsi8C3K9zFMlV+g9/Dw3e+ZlLoOeeSzeZ2fOber0W2WMuK1es+AyAed7ripkLflFevqEnDlw/Zsx6M/uu9wLjhORPpjc0DPfuEJE9E4K/826IAo2F3g2SGQiOLuL2SPfw6tbrM28xSP29KDlLA449MGjCrINBu8K7Q7KLGcLQOBdPPhnZY/FC8i6Sfb3XFhdm9sTS8vKHevI1lk6atMDMmr3XGhvkIJK3e2eIyJ4JGL7s3RAFo+k2Ufkr/OfiY6qOTferDi+p+g7Ir3mvXsSTBhx7gMYFAAu8OyTr3Ln5qUWrojpYRTJ5Csl/9F5UXJjZtsCs5/fUIQ1BMBdAh/ea44LAjBkNDcd7d4hI96WMW7wbRKJGIkCA+4vHVA9J12sWHz1zVEDc4L12EW8acHRT4YTZVST/wbtDsozZmxs3b/leVIf7WjI5GMCt3suKFfLK+smT/5COl1paVrYmBG70XnKcGHBn5fLl/b07RESk+8zMvBsiRw43s0XpeKmikrl9LRE8DLK397JFvGnA0Q0DxlQPgeFm7w7JPmb2Laypj+ynVAVmNxLYz3tdcWFmzwZlZbek8zW3Dxt2NcxicWl2JiD5KUskrvXuEBGR7jPiGu+GnkDw68UlM9Nwdej220kc6r3eqJjZT70bJHtpwNENiUTiZpL7endIdjHDoxufuu+xqI5X2dAwGeTp3uuKDbNUQJ5ZT6bS+bLLRo7cmUokzjIgfj+18nPu9KamUu8IEck9BPW9fC8QeTUw3O/d0SMC3jSsdNbhPXX44tKZJ5H8pvcyI2O4PwXUeGdI9tKAo4sGTZhzLGBV3h2SZcw2twc8L6rDHffSS71DsoYAvZcWF0bOry8vb/V47UcnTvw1zO7zfg9ig0wwlVpYadrsTyRbBAjyvBuiEW72Lsh2ZgVnmdkL3h3RY5+EhQ/jwNmR7983/OhTD4AFC7xXGBUze8GsQI9/l72iAUdXTJldQMMCkjqplO4hvret6d62qA7Xb/36HxD4rPey4sLM3nh/4MDLPRuCvLyLYfaO93sRFyRHhcnkRd4dItI1ZuGB3g1RYIit3g3Zrq21ZpuFqDDDNu+WyJFHFO2b+pdoD1qZYF7eQyAKvZcXBTNssxAVba018fv9l7TSgKMLBu/ElSQO8e6QLGNo3tC8+K6oDjdtxYrDYHap97LihMC5vxw1yvVDaf2ECX9CEFzo/V7EzLyKZPIg7wgR2T0G/Jx3QxTCgG95N8TBumfqXjDY2d4dPeTc4mOqI3viV/HogqsIjPdeVFQMdva6Z+pieAWPpJsGHLsxePzsIw282LtDsosZOjo6w7mIcH+FIAgWguzlvba4MGDJkkmTHvfuAIAlZWUPmNmvvDvigmRfmN3t3SEiXXKEd0AUGOpKvKisa6mrM7N/9e6IGklaYIuGls4etrfHGlZaNdmI73qvKSpm9q/rWurqvDskHjTg2DWCqCGR7x0i2cVgN25Zfd+aqI5XkUzOJTDRe11xYWYbg969v+3d8TfIswFs986IC5JfmtHYeJp3h4jsQsncfBhGe2dEIsDb3glxEuTv+DYMz3t3RI3kvvkW7tWJ/IjPV+6TAB8gGI/9pgzPB/k7MuszmWQ1DTh2YfCE2ecAHOfdERuGTRbaHO+MHl+m4eVN7wy4OqrjVT799DCYXe+9rlghL6sfM2a9d8ZfW1pe/qoBV3l3xEoY3lLZ3LyPd4aIfLwi7hxDoq93RxQ6t6de8W6IkzdX1m9HgEoD3vduiRqJLxaNrr5kT78+7FuwCECx9zqiYMD7CFD55sp6/YBHIqMBxyfoO/H0Ihiu8+6Ik9DsuxufWrwYZg96t/QUMzMjzsLLP90Z1THDnTtvI1novba4MKBpaXl5Rj5+7L3OzpvM7Dnvjtggh4adnTd5Z4jIxyOt0rshCma29e3fPqQrOCK29unaFwGc6d3REwj78fBjZpV09+uKS2aeQ/IE7/4Infnh77NIZDTg+AS9QpsPcqB3R2wYmjc9tXgBAHTs4AVm+JN3Us9g7abmRb+O6mgzGhqOJ3CS96piw6w9DMOM/bD05NSpnZZInAmzlHdLbJCzZiSTU7wzROQjDpxdYGZxuY3sj4hwzy35i7bVtf8WwiLbsD1jkL2YsAf3P6qqX1e/ZP/RVUcgCG72To9KCLurbXXtv3l3SPxowPExCsfNOoHENO+OuPjohptbnl30Doh/9u6KfJ3AOyGCyB5P+eXnnutnwJ3e64oV8oZHJ0/O6B26H5k4cTX0+x4ZAoTZwuNeeqm3d4uI/MXwoalqkvt6d0SBYGR7bsnfW7dtxwVm9ox3R9QIfDbRiz/tyq8dMb6yT4L4NwAF3t1RMLNn1m3bcYF3h8STBhwfdXhlf5J3eGfEycdtuLmxedEigy33bosSw/DCzSv/NbIrUwZs3nwNyU95rysuDHhx67BhP/bu6AqmUt83sze9O2KDPKTP+vVXeGeIyAdGjK/sQ8MPvDuiY7/xLoi1NfXtqQAzYNjknRI1EnOKS2fu9kpd6+hzC8HPe/dGwrApFWAG1tS3e6dIPGnA8RGFA/tfB3KEd0dcmNmLn7ThZpjCWYDt8G6MaJ2/2vDUfQ9EdbzKZLKEZud5rysuDLDAbO6ykSMj2xulJ9VPnbrFguBb3h1xEgCXVDQ2Hu7dISJAqrPg+3Ea4KeMzd4NcffW03V/MAtnm1n8bgWyYEFRSfWnP+lfDy+tmg7iLO/MSJZqZmbh7LeervuDd4vElwYcf2XguDljAZzr3REXZmawT95wc/OqxS8BlhU/Ud/NQrdbZ3B2VIerNEuEZgvBmDz+KxOY3Vs/adIK74zueKSs7DEDHvXuiJF8hGENzOgdIpLLhpWeVhoYLvXuiIoZwrzt27U5dBq0td7/MwNv8e6IHFEI4kFg3t+dlxWVzvlUYLjHOzEqBt7S1nr/z7w7JN404PizKVPyAloNqfckMsR9G59a/OSufsmGnb1vAPBb79S9ERJXbVp976tRHc8aGy8gebT3uuLCgLd3kHv8ODZPHeR5MIvdJbleSE6oaGiIxU/BRLJRUckp+yYseBhkL++W6Nhv3vzf+phunJ551lnBdw1Y6d0RNRITi0a/+pFbKecFQOcDIAd790XBgJXrrOC73h0SfzqZ/9Cg9gMvJnmUd0dcGPBOaImLd/sLW2s6OpGaa4bQu3mP1ml4blPz1n+J6ngnrlx5oJld5b2umLngF+XlG7wj9sRjZWVtZqYPAxEi+ZMTGhuLvDtEcs3gkspBCPL/E+RB3i3R0u0padVa0wEkvmHAe94pkaP9oKh05oQ//9+i0a9eQbDcOysKH/x+Jb7xwe+fSM/SgAPAoNLTDwoMV3p3xEl3Ntx8v7l2JYkF3s3dZbBUSDsTqI/skZ6Jjo67SXb5kWGya2b2xNLy8oe8O/bG0kmTFpiZPkBHhRyUbzbfO0Mkl+x79MlFfYI+/02gxLslarTwP70bck3b6kVvhIaquO3HQTAB44ODSyoHDT9mZjlosdiI18wsNFS1rV70hneL5AYNOAAwL7wbZB/vjviwX3Z3w80NqfbvAmjzLu+mOzc3L14d1cEqkslTSP6j96Liwsy2BWbneHfsNdIQBHMB6KceESEwbXpj4wneHSK5YPgxs0p65+WviuNww8y2dHbwSe+OXLS+pXYZaNd7d0SN5AF9WFDLgPcTMdmLjXb9+pbaZd4ZkjtyfsAxeNys00h+ybsjNgzbws5U9zfcXPXAZjPLnqdGmL25cdPW70d1uK8lk4MB3Oq9rDgheUX95Mmx2KV7aVnZmhC40bsjThiGd1QuX97fu0MkxlhcUn1RENhKIJ5PpyPwxFvP12317shVbasPudxgSe+OqJE8geSn9/5I/gyWbFt9yOXeHZJbcnrAMXD8N/exIIjfbsyOQti8TXv46KeNKxf/zID/8F5DV5jZt7CmfktUxyswu5HAft7rigsze5ZlZbd6d0Rp+7BhV8PsZe+OuCA5whKJa707ROKo+JjTxhWPrn4KAW4Cke/d01NC8mfeDbltXtge2jcM9rZ3ifw9g73dHto3gHlZuc+eZK+cHnAETN1EYKh3R1yY4blNK7fevDfH2GmpbwF433stu1wnbOnGp+57LKrjTV+xYhLI073XFRtmqYA8s56MbG+UTLBs5MidqUTiLANidc+xs3Mrksmx3hEicVFceuoXikur/t2CoBnEGO+enmRmW9a9Eyzx7sh177bevw7gaQaL1d/52e6D3w+e9sHvj0h65eyAo3Ds6VNhmOXdERdRbbi5fWXtWhgiu/WjBxa6qX1n57ejOlzlmjW9giCoIUDvpcWFkfPry8tbvTt6wqMTJ/4aZvd5d8QGmYBZzZTly/O8U0SyVVHJ3L7FpVWzi0dXPQXkPQuwkmT8/04j/gOvLd7hnSFA2+ra/0KIa7w75K+EuKZtde1/eWdIbsrNAcch3+6NwGpy4i/g9Ilsw80NKxfdAdhT3gv6OKHZd7dFOI1OvffeDwB8zntdcWFmb7w/cGCs7/UM8vIuhtk73h1xQfKoIXl5u3+ktYj8nxGfr9xneEnVqcWjq+4jd7QBXAQyp66GspRl3dPf4qyt9eCrDPhv7w4BDPjvttaDr/LukNyVkwOOQUPfv4LEId4dsWF4Y+OW1PciPaJhrlmGPTXC0LzpqcWRfaCZtmLFYQFwmfey4oTAub8cNSrWG77VT5jwJwTBhd4dcULgyopk8iDvDpFMVVRS/emi0dX/VFRa/ZPi0VVPhX0L3g0CPgCyGsQg7760Mzy97pn7Y7e5ZXabF6Z22qkw0y0RnszWpXbaqdp3Qzzl3GW5/UtnHU7wEu+OmDkXEe8ivmHl4v8ZPH72TQC/6704ADBDR2dnOBcR7n8QBMFCAL281xYj9UsmTXrcOyIdlpSVPVDR0DBLT4CKTB+Y3Q3gy94hIh72P6pqvyAPQwJgeBigmIZDQBwCYiSNI0EU/t8vJnP+nsoQNt+7Qf7eW8/XvT38mJnfYALLY/OI1SxisJSF9o23nr9fm76Kq1wbcDA/L6iJ847e6WaGJRtXLuqRk8oNvXFV4U7MyISrbYx2w5bV962J6ngVyeRcAhO91xUXZrYxKCj4jndHWpFnA/gtgD7eKXFA8ksVDQ0zl06adL93i/gJgK8Xja4e6d0RNQIJIwb+3/83GwywALA+BhT+9S27wYdf8NdfLH9hZn9c17LjQe8O+Xjrnrk/WVRSfTkC/MS7JeeEvHzdM3W6sknc5dSAY9C42WeBmODdERuGTe3tHT13Uvnk4h02Yc5ZMPsvz/1SzOzFTe8M+FFUx6t8+ulh4Y4d10NbwESHvKx+zJj13hnptLS8/NWKZPIqQh/iInTLtFWrlj06dux73iHihSNIjPCu6JGV/c3/4f/9U/1N1G037O2G6tKz2lprry8eXTUJ5Fe9W3KG2f9ra6273jtDBMihPTj6lswcHpA6EYhQ1BtufpxNzYt+DbDOa41mZjCchZd/ujOqY4Y7d95GstBrTXFjQNPS8vIa7w4P73V23mRmz3t3xAXJfRPt7Xv1qGsRiTGzV9u271jonSG7x207qszsj94ducDM/shtO6q8O0T+LGcGHL165d+ekxth9RSzpig33NyVVCp1kZm967JO4r6NTy1+MqrDVTQ2fpXASS5riSOz9jAMz/TO8PLk1KmdlkicATP9NDEiBlRNa2o61rtDRDKRXYU19e3eFbJ7b/5v/Z8Yht+AmX6/epJZO8PwG2/+b/2fvFNE/iwnBhyDx885nsQM7464MLP2DkudiQg33NyV95+ufY9mF6R9ncA7oSUie3zkl597rh/N7kr3OmKNvOHRyZNf8M7w9MjEiasB3OndERcEmEilFhz30ku9vVtEJHMYsHJty/1uV5RK96195oGnAMuIzerjy777wfsskjniP+A4vLI/9OE/WsYbtjxVl9aTyg1P3feAmf0qna/JMLxw88p/jWwiPWDz5msAfDqda4gzA17cOmzYj707MgFTqe+b2ZveHbFBHtJn/forvDNEJDMYLMXO8Byk6Qc7Ep21LfffYmY/8+6IIzP72dqW+2/x7hD5qNgPOAoH9bsWxKe8O+LCzF7c+G5/l5NK6wzOhtn29LwYntjw1H0PRHW4ymSyhGbnpaU9BxhgFoZnLhs5MrK9UbJZ/dSpWywIvuXdEScBcEllc/OR3h0i4o/g/LXP3v+cd4fsme22Y7bB/uDdEScG+8N22zHbu0Pk48R6wDFwwuxSAOd6d8RFT2y42R2bVt/7amic1/MLxbYw1XlOVIerNEuEZgtBPZM9Mmb3PjJ5coN3RiZ5pKzsMQMe9e6IkfwwlaqBmR4yIZLLDK9YWPB97wzZcxta6zdZaDO0H0dEzNottBkbWus3eaeIfJwYDzgqE4FxIaGTysiQi6PccHNPbHpqy01m6NGfooSweZuerots0m+NjReQPLrn353cYMDbO8hLvDsyUQd5nplt9u6ICwLjZjQ2RjbsFJHsYmYWkqe3tdZs826RvbOu9f5njLzQuyMOjLxwXev9z3h3iHyS2A44Bo3vdxGJUd4dcWGwty3YGdmGm3uuPhXSzjT0zFMjzPDcppVbI3tM5PSmpgPM7Kr0vT854YJflJdv8I7IRI+VlbXB7DLvjjgxs+tOaGws8u4QkfQjcO261ffpasGYaFtde6fB/t27I5sZ7N/bVtdqb0PJaLEccAwaU/WZAGm4lSGHhMYLNjU+mBEnlZubF/fIUyMMlgppZwL1kQ1PglTqLpL90voGxZiZPbG0vPwh745MtnTSpAVm1uzdERckB+abzffuEJF0s1+vbTlYmw3HTPvm/DMMeNG7IxsZ8GL75vwzvDtEdieWA44gkXcXiL7eHbFheGLzykUZdVK5cdPW78PwRrRH5R0fDk8iMaOh4WSQx6X7vYkrM9sWmOl2gd0hDUEwF0CHd0pcEJhW0dBwoneHiKSLvdm5E6cA80LvEonWu7+/9312hieZQbcddYMZtrEzPOnd39/7vneLyO7EbsAxcPycU0D8o3dHbES84WZk1tRvQZQbyBre2LilM7JNxL6WTA428jaPtyauSF5RP3mydkHvgqVlZWtC4EbvjjghMP+ExsYB3h0i0sMMmzoNx731fN3b3inSMz58Is63vTuyzLf1JCHJFrEacAwqO3VwQLvVuyNOQuDKKDfcjNKGlYseN8OSiA53Lp6v2xpVW4HZjQT2c3prYsfMnmVZ2a3eHdlk+7BhV8PsZe+O2CCL882u884QkR5k1p4yTHurpe633inSs9paau+FWa13R1Ywq21rqb3XO0Okq2I14GDY+yaCOqmMiJk9u2nlllu8O3alvb3jOzDs1WOqzLBkw8pFj0fVNH3FikkgT/d+b2LDLBWQZ9aTPbKxbFwtGzlyZyqROMsA826JCwLnVCSTY707RCR6ZmahYc761trl3i2SHszfcbbB/te7I5MZ7H+Zv+Ns7w6R7ojNgKNw3OwpMJvt3REXBktZGO2Gmz1hW+v960Ly0r1Y6Kb29o7vRNVTuWZNryAIagjQ+72JCyPn15eXt3p3ZKNHJ078tX5CFakAZjVTli/P8w4RkWgZcNG61roHvTskfd5cWb8dYaLCzCK7gjdOzGwrwkTFmyvrt3u3iHRHPAYch3y7N4gFJHVSGRXD/E2r7suKk8pNzffWwKxpT742NPvuttb710XVEm7YcDmAz3m/J3FhZm+8P3Dg5d4d2SzIy7sIZu94d8QFyaOG5Of/s3eHiETDzMyA761rqbvVu0XSr6118e+MdpZ3RyYy2lltrYt/590h0l2xGHAU7rvlByQ/690RG4Y3Nm5NZdVJZYelzjSz9u6t05o2PbX47qgaKpqbD0UYXub9XsQJgXN/OWqUfrKyF+onTPgTguBC7444YRheeWJT08HeHSISAdqlbatrf+KdIX7Wrb7/AYMt9O7IJAZbuG71/Q94d4jsiawfcPQfV3UYaHt+i4J8nEg33EyHLU/VvQDg+q7+ejNr77DUmVE2sLNzIcne3u9FjNQvmTQpsr1RctmSsrIHzOxX3h2xQRbkpVILvDNEZM8ZLBUazm5bff+/eLeIv7Z3Et8x4DfeHZnAgN+0vZOI7PZtkXTL+gFHPhMLSfby7ogNw79HueFmOm3cvPXHAH7ftXXyhg+HIpGoSCbngizzfg/iwsw2sndv/eUaJfJsALqPNirkP0xvaKjyzhCRPWC2wcLgq+taajWolA+8tnhH0NF5ksE2e6d4MtjmoKPzJLy2eId3i8ieyuoBx6AJp88FOdG7Iy4MtrG908737thja+rbDeHcD26n3cU6zV7c+G7/H0f1spVPPz0MZl2+ekS6gLysfsyY9d4ZcbK0vPxVA67y7ogTAjdPW7VqiHeHiHSdGV5Dyqaua73vl94tklne/M2DLzHEGd4dnhjijDd/8+BL3h0ieyNrBxz9SmcPI0KdVEbIEFy2dfXirD6p3Nh8XwOAT3xWt5kZDGfh5Z/ujOo1w507byNZ6L32uDCgaWl5eY13Rxy919l5k5k9790RFyT3TbS33+zdISJdY4ZfwjpK1z57/3PeLZKZ1rbW1ZvZHd4dHszsjrWtdfXeHSJ7K2sHHL3yeBuhk8rImDVtar43FieVIRKXGvDxT40g5m98avGTUb1WRWPjVwmc5L3m2DBrD8Mw0r1R5C+enDq10xKJM2CW0Y9/zjLVFcnkF70jROSTGawzNFze1lL7lbbWh9717pHM1mZ9LjQgK54kGBUDWtusjzYkl1jIygHH4AmzvgbqpDIqPbHhpqfNK//1T0ylvgjYmr+sEaEZ5m9sPvCCqF7ny8891w9heKf3emOFvOHRyZMj2xtF/t4jEyeuBqD/bqNkdveU5csLvDNE5O+Z4XdMheXrWmqvBWB7fUCJv9aajrAjmAHDRu+UtDBsDDuCGWit6fBOEYlC9g04jqrqBwvu8s6Imeuj3HAzE2xYVfv8huYDjwrJ0tDCL3aEiaKNKxd9G5gXRvUaAzZvvprkAd5rjZHfbx02LLK9UeSTMZX6vpm96d0RFyQPHpJIXOndISJ/YYbQYLcH+duPWfvMA09590h2Wf+bxa8ZrXp3+7plOzMzo1Wv/83i17xbRKKSdQOOwn6Ja0B8yrsjRn7/4dNHYmheuKnp3pZNK+/7762r7nkryiNXJpMltCzekDXDGGBhGM5dNnJkZHujyCernzp1iwXBt7w74oTkxZXNzUd6d4gIYIZnwbC8bXXd+W+urNfTo2SPtK2u+zkMN3l39CjDTW2r637unSESpawacAwaO6sExHneHXFhZmYI52JNfbt3SzapNEuEZgtBJrxbYsPs3kcmT27wzsglj5SVPWbAo94dMZIfplI1MMuqv1dF4sTMtsDCi9patpe2rb6/2btHsl/bgDe+Z4Ym746eYIamtgFvfM+7QyRqWfRBrDLBgAsJnVRG6N4Pnzoi3WCNjReQPNq7Iy4MeHsHeYl3Ry7qIM8zs83eHXFBYFxFU9O53h0iOces3QzzO5gYubbl/luAem2kLNF48slOJlInm1msNqc1s3eZSJ2MJ5/s9G4RiVrWDDgKJ/TVSWWEDPa2Jdp1UtlN05uaDjCzq7w7YuaCX5SXb/COyEWPlZW1wewy745YCcNrK5ubi70zRHKBwTrN8FCHBZ9va6n99jtZ/qh7yUxrVz3wpoWYGZf9OMzMLMTMtase0F5cEktZMeAonPDNA2jUSWWEQuMFmxof1EllNwWp1F0k+3l3xIWZPbG0vPwh745ctnTSpAVmpku5I0JygHV23uHdIRJnBksZbDHCxJFtLbWnvt163yveTRJv656pe4Lgdd4dUSB43bpn6p7w7hDpKVkx4KCl7oJOKqNjtmzzykU6qeym6Y2N3wB5nHdHXJjZ1sDsHO+OnEcagmAuAD0eLirkP1U0NJzonSESN2b2jgHXMwgPbFtdN6etdfHvvJskd6xtOeiHMFvh3bFXzFasbTnoh94ZIj0p4wccg8bN0UlllMy2GhM6qeymE5cvL2QY3ubdESckr6yfPPkP3h0CLC0rWxMCN3p3xAmB+Sc0Ng7w7hCJA4OthoWz2rbvGNG2uva7urRefMwL25k42WCRPpkvXQz2VjsTJwPzQu8WkZ6U0QOOQWWnDmZgt3t3xInRrtzY/K+ve3dkm7xE4kaS+3t3xIWZPcuyslu9O+Qvtg8bdjXMXvbuiA2yON/seu8MkWxlsLcB3NaRwqi21XVj1rbcX6unvom3d1YvXs8UTjVYVm1ka7AUUzhV+9RILsjoAQdTvW4kuJ93R1yY2bMbm7fd6t2RbaavWDHJyG96d8SGWSogz6wns+rDQdwtGzlyZyqROMuAWGyilgkInFXZ1DTeu0Mka5itg2EBUvYPbasPHr52de0Fbz9T+7x3lshfW/tM3a+J7NobkOBVa5+p+7V3h0g6ZOyAo3DCrEkATvfuiAuDpSy0M/XotO6pXLOmVxAENQTo3RIXRs6vLy9v9e6Qv/foxIm/JlDn3REjQZhK1UxZvjzPO0QkU9kH7kiFOHZty8Ej1rbUnv3BiZguo5fMtXb1QdeY2a+8O7rCzH61dvVB13h3iKRLZg44Dq/sRQQ1JHVSGRXj7ZtW3aeTym4KN2y4HMDnvDviwszeeH/gwMu9O+STMZG4EGbveHfEBckj9k0k9EhukU/w4We9T61vPWiFhhqSPeaFYSrvNBjavEt2ydAWpvJO058tySUZOeAoHNhfJ5URMsPrG7d2asfkbqpobj4UYXiZd0ecEDj3l6NGbfXukE9WP2HCnxAEF3p3xMwVJzY1HewdIZKpSJ4wvPSV+d4dIt2x/tlF7xh4ksE6vVs+jsE6DTxp/bOL9EMLySkZN+AYMH72oSB0UhmhMLRz8XydTiq7q7OzhmRv74y4MODfl0ya9Lh3h+zekrKyB7Ll0tusQBYkUqmF3hkimSwAzykqqdbnP8kqbS33NcH4fe+Oj2X8flvLfU3eGSLplnEDjgRRQ0AnlVEx/PvmVYv/n3dGtpnR0HAGyXLvjrgws41B797ne3dIN5BnA9junREXJKdWNDbO8u4QyWi064pLqs72zhDpjraW2hsNyKgf4BjweFtLrR7/LjkpozY+GzRuzhkEdFIZEYNt7OiETiq7qfLpp4eFO3feoA1gIkReVj9mjB5NlkWWlpe/WpFMXkXgJ94tsRGGN319+fJf/Hzq1He9U+TjmdnvUwGO8+4AAIYcGsAeJznUuyVtayZptPlFpVVr21bX/dy7R6Srtu7orO7XO/EsyQO8W8zs9a07U9XeHSJeMmbA0X9C1X6E3aCHVUTHQl6ydfUinVR2U7hz520EBnt3xIUBTUvLy2u8O6T73uvsvGlIInEqyaO8W+KA5JBeicQtAKq8W+TjEWh/6+m6P3h3fOgPw0ZXHx8YlpPo6x2TLgQTZnh42Ojqqetbap/27hHpik3/8+CGPqOrT0qYJUH2cgsxaw/Bkzb9z4MbvN8TES8Zc4tKvuX9lKBOKiNisOSmpxbd492RbSoaG79K4CTvjtgwaw/D8EzvDNkzT06d2hmYnQkzPV46IiRnViSTX/TukOywvqX2adBONuTWn0ESfQPY4/uPrjrCu0Wkq9a31D4dGlyfmhUaLtFgUHJdRgw4Bo6d/VVQJ5VRMWBnyjDXuyPbfPm55/ohDO/07ogV8oZHJ09+wTtD9lz95MlPA9CfiyiZ3V3Z3NzHO0OyQ9vqup8zxHneHelGcmgesWzIqOpi7xaRrlrXWnc7YI/4vLo98sHri+Q2/wHHUVX9goD68Bwlw/Xvr1z8O++MbDNg8+arM+HeyRj5/dZhw37sHSF7j6nU983sTe+OuCB5sKVS87w7JHusba272xDm4H44HFGQb8v2GXvaQO8Ska7aHoRzYPZqWl/U7NXtQTjHe+0imcB9wFHYP3E1CZ1URuf3GzdvucY7IttUNDcfTTNtyBoRAywMw7nLRo7c6d0ie69+6tQtFgTf8u6IEzO7qKKhQXubSJe1rb7/ewZ7wLsj7cgj+4TBoyPGV+qqJ8kKf1r1wGYDZ8AsPZ+BzHYaOONPqx7Y7L12kUzgOuAoHF99NKCnfETFzAy0M7Gmvt27JauYBejsvAdkwjslNszufWTy5AbvDInOI2VljxnwqHdHXJDMI7AQZu4/aJDs0Rb2mQOzJ7070o/Hhh0FDwPz9OdFskJbS+2zMFyQlhczXNDWUvus95pFMoXjXxTzAiBxD6GTyqiQuGdD0+Kkd0e2mdHYeCHJY7w74sKAt3eQrptsSc/oIM8zM/2EKCrkmIqmpnO9MySLtNZ0mHVWwuxl75R0I3nC8NJX5nt3iHTV2ta6u83s4Z58DTN7eG1r3d3eaxXJJG4DjsJxr59PQieVETHDW7YNl3p3ZJvpTU0HmNlV3h0xc8Evysv1eLIYeqysrM2A73p3xEoYXlvZ3KxNFKXL2loferfDgq+Y2TveLekWgOcUlVRf5t0h0lUd23ecaWa/74ljm9nvO7bv0JPqRD7CZcAxuKz60wzsau/Fx4kZzt/4m8UbvTuyTZBK3UWyn3dHXJjZE0vLyx/y7pCe80h5+d1m1uzdERckB4SdnXd5d0h2ebv1vldC8HgzbPNuSTvadcUlVWd7Z4h0xTtr6rekgBlR/1k1w7YUMOOdNfVbvNcokml8ruAIgzsB9vdefGyYLdv01KJ/887INtMbG78B8jjvjrgws62p/Hx96Iw70hAEcwF0eKfEBcmvV6xYUeHdIdllfUvt06CdbLCUd0s6kaQFmF9UWvV17xaRrnirpe63NER6OyIN577VUvdb77WJZKK0DzgGjZt1EsCveS88Nsy2GhPneGdkmxOXLy9kGN7m3REnJK/82fjxr3l3SM9bWla2JgRu9O6IlSC4/binntKjMKVb2lbX/ZwhzvPuSDeCCRgfHja6eox3i0hXrG2tvc9gi6M4lsEWr22tvc97TSKZKq0DjsIvzC4kg9u9Fx0nZvzhxuZ/fd27I9sk8vJuILm/d0dcmNmzLCu71btD0mf7sGFX5+JGhz2FQFHfjo6feHdI9lnbWne3Icy5/3ZI9A1gj+8/uuoI7xaRrgjydpwLs7276sLst0HeDm1OLbILaR1wsC9uIKGTyoiY4ZmNTx2gqxC6qbKxsQzAGd4dsWGWCsgz68mcukw61y0bOXJnKpE4ywDzbokLAmdVNjWN9+6Q7NO2+v7vAVbv3ZFuJIfmEcuGjKrWRr2S8d5cWb/dEM4wsz3aN8PMthjCGW+urN/uvRaRTJa2AcfgsaeXmemkMiof3HObOgOYF3q3ZJPKNWt6hWG4kAC9W+LCyPn15eWt3h2Sfo9OnPhrAnXeHTESWBjeU9LSku8dItmHeTtmwWyVd4fDykcU5Nuyfcaeplu8JOO1tTzwe4Bz9+yrOfeDrxeRXUnPgOPwyl4IrIakTiqjc9vGlbXPekdkm3DDhstJHurdERdm9sb7Awde7t0hfphIXIgcfFxlD/r8gdu365Hf0m1vrqzfbtZ5fE7eOkYe2ScMHh0xvrKPd4rI7rS11D4Ew4JufZFhQVtLrZ5SJ9IFaRlwFA7sdxmIw7wXGxdmeH3jltQV3h3ZpqK5+VCE4WXeHXFiwDm/HDVqq3eH+KmfMOFPCIILvTvihGY/qFixYqR3h2SfttaH3u2w4CuWk0NHHht2FDwMzPN5QqBIN6zd+M75ZujSDyrN8Ozaje+c790ski16/C+BAWOqPwtSP+GNUGg8B8/X6aSyuzo7a0j29s6ICwP+/ZFJk37h3SH+lpSVPWBmv/LuiA2yAGT3fron8qG3W+97JQSPN8M275Z0I3nC8NJX5nt3iOzWy8t2dhorYdi0y19n2NRprMTLy3Z6J4tkix4fcCQSiRoCOqmMjD28+al7l3lXZJsZDQ1nkCz37ogLM9sY9O6tnybIX5BnA9DGZxEhObWisXGWd4dkp/UttU+DdvIH+3XllgA8p6ikWldrSsb7YBgZfnNXvyZE+M23W+97xbtVJJv06ICjcPzs00lM9l5kXBhsQwdSOqnspmlNTfsZeYN3R6yQl9WPGbPeO0Myx9Ly8lcNuMq7I04YhjdXNjQM9e6Q7NS2uu7nDHGed4cL2nXFJVVne2eI7M66lvuXmtlPP+7fmdlP17Xcv9S7USTb9NiAo/+Eqv1A/Iv3AuPEQl66pbnube+ObJPo7LyNwGDvjrgwoGlpeXmNd4dknvc6O28ys+e9O2KD3CcEbvXOkOy1trXuboPd7t2RbiRpAeYXlVZ93btFZHfarM/FBlv91//MYKvbrM/F3m0i2ajHBhz5SNxGUCeVETFYctNTi+7x7sg2FY2NX0UQnOzdERtm7WEYnumdIZnpyalTOwOzM2G5d1l8TyF56oympi97d0j2alt98IVm9ph3R7oRTMD48LDR1WO8W0R2qbWmwzpTlQZ7wgz/ZbAnrDNVidaaDu80kWzUIwOOgeNnfwWgTiojYsDOlGEPn5mdu7783HP9EIZ3enfECnnDo5Mnv+CdIZmrfvLkpwHoz12ELAzvqmxu1uMvZQ/NC4P8HSfDbJV3SbqR6BvAHt9/dNUR3i0iu7Lu2Qdfb1td95W2ltovta2u+8q6Zx983btJJFtFP+Aomds3AO7yXlismF3z/srFv/POyDYDNm++muQB3h0x8nvus8+PvCMk8zGV+r6ZvendERcEDrJUap53h2SvN1fWbzfrPB5mL3u3pBvJoXnEsiGjqou9W0REpOdFPuAo7NVxFckDvRcWG4YXNm7eer13RrapaG4+mmbakDUiBlgYhnPrDz+83btFMl/91KlbLAi+5d0RJ2Z20bRkcpR3h2SvttaH3u2w4Ctm9o53S/pxREG+Ldtn7GkDvUtERKRnRTrgKJww+wugXeC9qLgwM0PIuVhTr5PK7jAL0Nl5D8iEd0psmN37yOTJDd4Zkj0eKSt7zIBHvTvigmReYHYPzHr88e4SXx88lpLHm2Gbd0vakUf2CYNHR4yv1O1eIiIxFuEHpXkBwIUE87wXFRck7tmw6t5G745sU5FMnk/yGO+OuDDg7R3kJd4dkn06yPPMbLN3R1yQHF3R2Jibj/2UyKxvqX0atJMNubgZMI8NOwoe/uAzq4iIxFFk3+ALJ7x+HoHR3guKCzO8ZdtwqXdHtqlsbPw0gau9O2Lmgl+Ul2/wjpDs81hZWRvJ73l3xAnNrpn+1FMjvDsku7Wtrvs5DN/37vBA8oThpa/M9+4QEZGeEcmAo8/Y00YQdo33YuLEYN/e+JvFG707so2F4d0g+3t3xIWZPbG0vPwh7w7JXkvKyu4ys2bvjtgg+7O9XU+pkb3W1lJ3QwjLyU3hA/CcopLqy7w7REQkepEMOAoS+XcDOqmMjv1i08rF9d4V2WZ6Y+M3QB7n3REXZrY1lZ9/tneHZDnSEARzAXR4p8QFya9Pb2iY4d0h2W/d6oPPM7PHvDtc0K4rLqnS33EiIjGz1wOOQeNnVwL8mvdC4sO2IAjP9a7INicuX17IMLzNuyNOSF75s/HjX/PukOy3tKxsTQjc6N0RJzS7vbKlZZB3h2S7eWGQv+NkmK3yLkk3krQA84tKq77u3SIiItHZqwHH4JK5gwJAJ5URspBXbGis/aN3R7ZJ5OXdQHJ/7464MLNnWVZ2q3eHxMf2YcOuhtnL3h1xwSAYbtu26RHistfeXFm/3azz+Fz880kwAePDw0ZXj/FuERGRaOzdFRy92q8HOdx7EXFhhmc2PnWABkbdVNnYWAbgDO+O2DBLBeSZ9WQO7rAvPWXZyJE7U4nEWQaYd0tcGDm3YsWKCd4dkv3aWh96t8OCr5jZO94t6UaibwB7fP/RVUd4t4iIyN7b4wHHgPFzJhgw13sBcWGwTtC+CcwLvVuySeWaNb3CMKwhQO+WuDByfn15eat3h8TPoxMn/ppAnXdHXBAgg2BhSUtLvneLZL+3W+97JQSPh1m7d0u6kRyaRywbMqq62LtFRET2zp4NOErm5ucBC0nqpDIqxls3Ni/+jXdGtrH33ruM5GHeHXFhZm+8P3Dg5d4dEl+pXr0uQg7+lLgHff7A7dv1SHGJxPqW2qdDwxwzy8ErrTiiIN+W7TP2tIHeJSIisuf2aMAxuPfOS0F83js+LszstY3t+Vd6d2SbiubmQw3QyXiUguDsX44atdU7Q+Lr0bFj30MQXOjdEStmPzwxmfysd4bEw7rWugdh/J53hwvyyD5h8OiI8ZV9vFNERGTPdHvAMXDs7JEAf+AdHichcA5aa7Z5d2Sdzs4akr29M+LCgH9fWlb2/7w7JP6WlJU9YGa/8u6IC5K984Aa7w6Jj7bW2utD2F3eHT54bNhR8DAwb6+fNCgiIunX7W/eQQILABZ4h8eHPbx55eL/9K7INjMaGs4gWe7dERdmtjHo3ft87w7JIeTZALZ7Z8TI5Ipk8nTvCImPdasPPs/MHvPu8EDyhOGlr8z37hARke7r1oCjcPzs0wlO9Y6OCzP8qQMpnVR207Smpv2MvMG7I1bIy+rHjFnvnSG5Y2l5+asGXOXdESc0u7GyoWGod4fExbwwyN9xMsxWeZd4CMBzikqqL/PuEBGR7unygKP/0XOGArzROzhe7JItzXVve1dkm0Rn520EBnt3xIUBTUvLy3V5u6Tde52dN5nZ894dsUHuEwK3emdIfLy5sn67WefxMHvZu8UF7brikqqzvTNERKTrujzgyC+wW0ns4x0cF2ZYsXHl4nu9O7LNtGTyKwiCk707YsOsPQzDM70zJDc9OXVqJ8i5MEt5t8QFyVMrGhr+0btD4qOt9aF32Zn6KgybvFvSjSQtwPyi0qqve7eIiEjXdGnAMWjCrC+DPNU7Ni4M2JlKpeZ6d2Sbr7e09A0sVzc96xkhcP2jkye/4N0huWtpefkqAHd6d8TM3V9vaenrHSHx8eZvHnwpZZgGs3bvlnQjmIDx4WGjq8d4t4iIyO7tfsAxvrIPEeikMkpm17z/dO2L3hnZptf27T8ieaB3R4z8PjFkyI+9I0SYSn3fzN707ogLkgfmb9um/U0kUutba5eHhjlmZt4t6UaibwB7fP/RVUd4t4iIyK7tdsAxmP3nETjIOzQ2DC9s3Lz1eu+MbFPR3Hw0zbQha0QMsDAM59YffnjO/TROMk/91KlbLAi+5d0RJwQuqGxq+oJ3h8TLuta6B2H8nneHB5JD84hlQ0ZVF3u3iIjIJ9vlgGPw2OqjDHaRd2RcmJl1AmdgTb1OKrvDLEBn5z0gE94psWF27yOTJzd4Z4j82SNlZY8Z8Kh3R1yQzAtTqYUw6/bj4EV2pa219voQuXq7KEcU5NuyfcaeNtC7REREPt4uPvjMCywIFhLM846MCwI1769c1OzdkW0qksnzSR7j3REXBry9g7zEu0PkozrI88xss3dHXJAcPaOp6TveHRI/61YffJ6ZPebd4YI8sk8YPDpifGUf7xQREfl7nzjgGDz+9XNJakOlqJitQ3svPU+9myobGz9N4Grvjpi54Bfl5Ru8I0Q+6rGysjYyNy9/7zFh+KPKxsZPe2dI3MwLg/wdJ8NslXeJDx4bdhQ8DMzTFVIiIhnmY78x9xl72gjQrvOOi5MQOH9Da03OPWJtb4VheCfI/t4dcWFmTywtL3/Iu0PkkywpK7vLzHSlW1TI/mEY6ik1Erk3V9Zvb2fiRCA3NwgmecLw0lfme3eIiMjf+tgBR+8g/05AJ5XRsV9sWrm43rsi28xIJitJfs27Iy7MbKslEmd5d4jsEmkIgrkAOrxT4oLk12Ykk5XeHRI/76xevL7TcBwMOfkDnAA8p6ikWlfniohkkL8bcAyaMKuC5Ne9w+LDtuzo4DneFdnmxOXLC83sp94dcULyykcmTnzdu0Nkd5aWla0JgRu9O+LEwvC2ypaWQd4dEj9vtdT9NmWYBrPc3ECddl1xSdXZ3hkiIvKBvx1wjD1tYIDgdu+oODHw8u2rF73h3ZFtEnl5N5Dc37sjLszsWZaV3erdIdJV24cNuxpmL3t3xAWDYHi4ffsN3h0ST+tba5eHhjlmZt4t6UaSFmB+UWmVfjgoIpIB/mbAMTjR6ycAiryj4sKAlo3NB+j+zG6qbGwsA3CGd0dsmKUC8sx6MuWdItJVy0aO3JlKJM4yIOdOmHrQmR9+fxWJ3LrWugdhublJMMEEjA8PG12tzflFRJz934BjwITq8WbQ/fkRMVgnYGcC80LvlmxSuWZNrzAMawjQuyUujJxfX17e6t0h0l2PTpz4awJ13h1xQYBhGNZUrlnTy7tF4qmttfb6EHaXd4cHEn0D2OP7j646wrtFRCSXfTDgmDIlLw+JGhJ63FVUjLdubF78G++MbGPvvXcZycO8O+LCzN54f+DAy707RPZUqlevi2D2jndHXJA8zN57T5siSo9Zt/rg8wz2c+8ODySH5hHLhoyqLvZuERHJVQEADN75mUsAaOIcETP7w8b2/Cu9O7LNicnkZw3QyXiUguDsX44atdU7Q2RPPTp27HsIggu9O+LEgMtPTCY/690hcTUv3BGEM2H2P94lPjiiIN+W7TP2tIHeJSIiuSgYOP6bh4B2hXdInBjtbLTWbPPuyDYJs4Uke3t3xIUB/760rOz/eXeI7K0lZWUPmNmvvDvigmTvPKDGu0Pi60+rHti8o4PHAfamd4sL8sg+YfAoSubme6eIiOSaIGDqJwALvENiw+zBTc33/dI7I9tMb2iYQXKSd0dcmNnGoHfv8707RCJDng1gu3dGjEyuaGz8qneExNd7z9Wu7TQcB8Mm7xYfPLY42PFd7woRkVwT0KAPOBExw586dvAC745sROAr3g2xQl5WP2bMeu8MkagsLS9/1YCrvDvihGH4Je8Gibe3Wup+mzJMg1m7d4sLs2rvhGwRbN2i22nlLyyM3cMGDEGHd0OuCIzY6R0RH3bJlmcXaTO8PZPnHRAXBjQtLS/X5ecSO+91dt5kZs97d8SFRfB918y2eK8jWtRjiSO2vrV2eWiYY2Y5994aObhHjw+s8V5jJOswvPbm/9b/ybtDMke4o/0PZharoZcZVno3fFTfoD12Qxej7QhgXO4dEgdm9uTGlYvv9e7IWmSDd0IsmLWHYXimd4ZIT3hy6tROkHMB6PHbEWAk33f5lPc6omTE094NcbSute5BGL/n3ZF+1tyzh8fl2T44MkMYApd4d0hmeWdN/RYC13l3RMWA/17fUrvMu+Oj3lxZvz1uG0ITaAhSsO/DbLN3TDYz4B1LpU737shmr/XpU2fAKu+ObGfA9x6dPPkF7w6RnrK0vHwVgGu9O7Ke2a9ZVvZIBEe6FLBY7I1iZu8wSOk2qB7S1lp7fQi7y7sjbQybECYu7cmXaGup/Y8QOB6GV7yXu0fMXgbtxPUttUu8UyTzrG2puwZheK7B3vZu2Qs7DLYwtdP+yTvkk4ShfQuGeFzJYdjEjtTlBIABY6o/m5cXXGWGL4EfPDpWusiwwjqDizetvvdV75RsV9nc3CdMpa6k2ekgh3r3ZJHQzP6XQXDlkmhOWEQy3vTGxm8EZlcYcBiB2N2r24P+CKB267BhP142cmQkt6gOL5l5DANeA7CUZln3GcKIDgIrOsLge2+33pedJ4pZZPjoqgsIzCUwzLulJxgZAliZMvveWy11v03X6w4uqRxkqX5Z872Qia22obU+RzeglW5i4RdmD/KO2BMbO7Zuw5r6jN+DqKh05gRa8GPAvuDdsicM6ATQHKbC769/9oH//f9NcHiP29X2iAAAAE5lWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAAITAAMAAAABAAEAAAAAAAAAAAEsAAAAAQAAASwAAAABm2JwLAAAAABJRU5ErkJggg==" align="right" width="120" /></h1>
+<!-- badges: start -->
+
+<p><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle: experimental" /></a></p>
+<!-- badges: end -->
+
+<p>This repository generates a simple situation report of the overall
+code health of the PACTA ecosystem.</p>
+<p>Code health is reported at the level of the R package, and at the
+level of the Transition Monitor Docker image.</p>
+<h2 id="r-packages">R Packages</h2>
+<h3 id="pacta-for-banks">PACTA for Banks</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repo</th>
+<th align="left">Lifecycle</th>
+<th align="left">Status</th>
+<th align="left">Test_Coverage</th>
+<th align="left">Latest_SHA</th>
+<th align="left">Maintainer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.data">r2dii.data</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.data/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/r2dii.data?branch=main"><svg id="svg_544baa4f5952bb716bd1" alt="Codecov test coverage" width="122" height="20" viewBox="0 0 122 20">
+    <linearGradient id="svg_544baa4f5952bb716bd1_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_544baa4f5952bb716bd1_a">
+        <rect width="122" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h76v20H0z" />
+        <path fill="#4c1" d="M76 0h46v20H76z" />
+        <path fill="url(#b)" d="M0 0h122v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="98" y="15" fill="#010101" fill-opacity=".3">100%</text>
+        <text x="98" y="14">100%</text>
+    </g>
+    <svg viewBox="140 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.data/commits/main"><code>24fa6a9</code></a></td>
+<td align="left"><a href="https://github.com/jacobvjk/">@jacobvjk</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.match">r2dii.match</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.match/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/r2dii.match?branch=main"><svg id="svg_8a322241b4e4475ba3f9" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_8a322241b4e4475ba3f9_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_8a322241b4e4475ba3f9_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#b7ae1c" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">86%</text>
+        <text x="93" y="14">86%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.match/commits/main"><code>8957c26</code></a></td>
+<td align="left"><a href="https://github.com/jacobvjk/">@jacobvjk</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.analysis">r2dii.analysis</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.analysis/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/r2dii.analysis?branch=main"><svg id="svg_94a1fa955546ff554a54" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_94a1fa955546ff554a54_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_94a1fa955546ff554a54_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#5fcc0b" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">98%</text>
+        <text x="93" y="14">98%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.analysis/commits/main"><code>d5c0a15</code></a></td>
+<td align="left"><a href="https://github.com/jacobvjk/">@jacobvjk</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.plot">r2dii.plot</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.plot/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/r2dii.plot?branch=main"><svg id="svg_68ead5179e110ea1fae4" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_68ead5179e110ea1fae4_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_68ead5179e110ea1fae4_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#53cc0d" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">99%</text>
+        <text x="93" y="14">99%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/r2dii.plot/commits/main"><code>815ba86</code></a></td>
+<td align="left"><a href="https://github.com/MonikaFu/">@MonikaFu</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="transition-monitor">Transition Monitor</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repo</th>
+<th align="left">Lifecycle</th>
+<th align="left">Status</th>
+<th align="left">Test_Coverage</th>
+<th align="left">Latest_SHA</th>
+<th align="left">Maintainer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.validation">pacta.data.validation</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.validation/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.data.validation?branch=main"><svg id="svg_af68b0d23bab509d7638" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_af68b0d23bab509d7638_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_af68b0d23bab509d7638_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#8aca02" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">95%</text>
+        <text x="93" y="14">95%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.validation/commits/main"><code>411ef11</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.scenario.data.preparation">pacta.scenario.data.preparation</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.scenario.data.preparation/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.scenario.data.preparation?branch=main"><svg id="svg_9668e55b6d450076f8a0" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_9668e55b6d450076f8a0_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_9668e55b6d450076f8a0_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">12%</text>
+        <text x="93" y="14">12%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.scenario.data.preparation/commits/main"><code>24ee023</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.scraping">pacta.data.scraping</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.scraping/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.data.scraping?branch=main"><svg id="svg_110be7e65b10be9634ca" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_110be7e65b10be9634ca_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_110be7e65b10be9634ca_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#97ca00" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">94%</text>
+        <text x="93" y="14">94%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.scraping/commits/main"><code>47605da</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.preparation">pacta.data.preparation</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.preparation/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.data.preparation?branch=main"><svg id="svg_baef81d5d2f99b8adbf3" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_baef81d5d2f99b8adbf3_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_baef81d5d2f99b8adbf3_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">19%</text>
+        <text x="93" y="14">19%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.data.preparation/commits/main"><code>d3758ae</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.import">pacta.portfolio.import</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.import/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.import?branch=main"><svg id="svg_22be080d1645c94f4030" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_22be080d1645c94f4030_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_22be080d1645c94f4030_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">62%</text>
+        <text x="93" y="14">62%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.import/commits/main"><code>345528a</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.audit">pacta.portfolio.audit</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.audit?branch=main"><svg alt="Codecov test coverage" viewBox="0 0 112 20"><use href="#svg_81f7c9f0267122f86695" width="100%" height="100%" /></svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.audit/commits/main"><code>10ce2a7</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.allocate">pacta.portfolio.allocate</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.allocate/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.allocate?branch=main"><svg id="svg_81f7c9f0267122f86695" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_81f7c9f0267122f86695_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_81f7c9f0267122f86695_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">60%</text>
+        <text x="93" y="14">60%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.allocate/commits/main"><code>2f65a20</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.report">pacta.portfolio.report</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.report/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.report?branch=main"><svg id="svg_84be426f584becc14762" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_84be426f584becc14762_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_84be426f584becc14762_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">1%</text>
+        <text x="93" y="14">1%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.report/commits/main"><code>a3010b7</code></a></td>
+<td align="left"><a href="https://github.com/MonikaFu/">@MonikaFu</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.executive.summary">pacta.executive.summary</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.executive.summary/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.executive.summary?branch=main"><svg id="svg_49cbd54daaf6d0bd5cd8" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_49cbd54daaf6d0bd5cd8_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_49cbd54daaf6d0bd5cd8_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">10%</text>
+        <text x="93" y="14">10%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.executive.summary/commits/main"><code>3c9c476</code></a></td>
+<td align="left"><a href="https://github.com/MonikaFu/">@MonikaFu</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.utils">pacta.portfolio.utils</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.utils/actions/workflows/R-CMD-check.yaml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5SLUNNRC1jaGVjayAtIHBhc3Npbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMzREMDU4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyOEE3NDUiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMDIsMCBMMTAyLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+Ui1DTUQtY2hlY2s8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDIpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.utils?branch=main"><svg id="svg_f5bb98d5356cab64f40d" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_f5bb98d5356cab64f40d_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_f5bb98d5356cab64f40d_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">61%</text>
+        <text x="93" y="14">61%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.portfolio.utils/commits/main"><code>e619ad2</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pacta-for-supervisors">PACTA for Supervisors</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repo</th>
+<th align="left">Lifecycle</th>
+<th align="left">Status</th>
+<th align="left">Test_Coverage</th>
+<th align="left">Latest_SHA</th>
+<th align="left">Maintainer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.multi.loanbook.analysis">pacta.multi.loanbook.analysis</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.multi.loanbook.analysis/actions/workflows/R.yml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4NSIgaGVpZ2h0PSIyMCI+CiAgPHRpdGxlPlIgLSBwYXNzaW5nPC90aXRsZT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id29ya2Zsb3ctZmlsbCIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM0NDRENTYiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI0MjkyRSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJzdGF0ZS1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM0RDA1OCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjhBNzQ1IiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8ZyBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBpZD0id29ya2Zsb3ctYmciIGQ9Ik0wLDMgQzAsMS4zNDMxIDEuMzU1MiwwIDMuMDI3MDI3MDMsMCBMMzUsMCBMMzUsMjAgTDMuMDI3MDI3MDMsMjAgQzEuMzU1MiwyMCAwLDE4LjY1NjkgMCwxNyBMMCwzIFoiIGZpbGw9InVybCgjd29ya2Zsb3ctZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIj4KICAgICAgICA8dHNwYW4geD0iMjIuMTk4MTk4MiIgeT0iMTUiIGFyaWEtaGlkZGVuPSJ0cnVlIj5SPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgICA8dGV4dCBmaWxsPSIjRkZGRkZGIj4KICAgICAgICA8dHNwYW4geD0iMjIuMTk4MTk4MiIgeT0iMTQiPlI8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNSkiIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGQ9Ik0wIDBoNDYuOTM5QzQ4LjYyOSAwIDUwIDEuMzQzIDUwIDN2MTRjMCAxLjY1Ny0xLjM3IDMtMy4wNjEgM0gwVjB6IiBpZD0ic3RhdGUtYmciIGZpbGw9InVybCgjc3RhdGUtZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE1Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgICA8dGV4dCBmaWxsPSIjRkZGRkZGIj4KICAgICAgICA8dHNwYW4geD0iNCIgeT0iMTQiPnBhc3Npbmc8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8cGF0aCBmaWxsPSIjOTU5REE1IiBkPSJNMTEgM2MtMy44NjggMC03IDMuMTMyLTcgN2E2Ljk5NiA2Ljk5NiAwIDAgMCA0Ljc4NiA2LjY0MWMuMzUuMDYyLjQ4Mi0uMTQ4LjQ4Mi0uMzMyIDAtLjE2Ni0uMDEtLjcxOC0uMDEtMS4zMDQtMS43NTguMzI0LTIuMjEzLS40MjktMi4zNTMtLjgyMi0uMDc5LS4yMDItLjQyLS44MjMtLjcxNy0uOTktLjI0NS0uMTMtLjU5NS0uNDU0LS4wMS0uNDYzLjU1Mi0uMDA5Ljk0Ni41MDggMS4wNzcuNzE4LjYzIDEuMDU4IDEuNjM2Ljc2IDIuMDM5LjU3Ny4wNjEtLjQ1NS4yNDUtLjc2MS40NDYtLjkzNi0xLjU1Ny0uMTc1LTMuMTg1LS43NzktMy4xODUtMy40NTYgMC0uNzYyLjI3MS0xLjM5Mi43MTgtMS44ODItLjA3LS4xNzUtLjMxNS0uODkyLjA3LTEuODU1IDAgMCAuNTg2LS4xODMgMS45MjUuNzE4YTYuNSA2LjUgMCAwIDEgMS43NS0uMjM2IDYuNSA2LjUgMCAwIDEgMS43NS4yMzZjMS4zMzgtLjkxIDEuOTI1LS43MTggMS45MjUtLjcxOC4zODUuOTYzLjE0IDEuNjguMDcgMS44NTUuNDQ2LjQ5LjcxNyAxLjExMi43MTcgMS44ODIgMCAyLjY4Ni0xLjYzNiAzLjI4LTMuMTk0IDMuNDU2LjI1NC4yMTkuNDczLjYzOS40NzMgMS4yOTUgMCAuOTM2LS4wMDkgMS42ODktLjAwOSAxLjkyNSAwIC4xODQuMTMxLjQwMi40ODEuMzMyQTcuMDExIDcuMDExIDAgMCAwIDE4IDEwYzAtMy44NjctMy4xMzMtNy03LTd6Ij48L3BhdGg+CiAgPC9nPgo8L3N2Zz4KCg==" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.multi.loanbook.analysis?branch=main"><svg id="svg_670005e03fb8a897f7bd" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_670005e03fb8a897f7bd_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_670005e03fb8a897f7bd_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">70%</text>
+        <text x="93" y="14">70%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.multi.loanbook.analysis/commits/main"><code>e59b1e8</code></a></td>
+<td align="left"><a href="https://github.com/jacobvjk/">@jacobvjk</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.multi.loanbook.plot">pacta.multi.loanbook.plot</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ImxpZmVjeWNsZTogZXhwZXJpbWVudGFsIj48dGl0bGU+bGlmZWN5Y2xlOiBleHBlcmltZW50YWw8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjEzOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjU1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iNTUiIHdpZHRoPSI4MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZlN2QzNyIvPjxyZWN0IHdpZHRoPSIxMzgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI5NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjczMCI+ZXhwZXJpbWVudGFsPC90ZXh0Pjx0ZXh0IHg9Ijk1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNzMwIj5leHBlcmltZW50YWw8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.multi.loanbook.plot/actions/workflows/R.yml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4NSIgaGVpZ2h0PSIyMCI+CiAgPHRpdGxlPlIgLSBwYXNzaW5nPC90aXRsZT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id29ya2Zsb3ctZmlsbCIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM0NDRENTYiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI0MjkyRSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJzdGF0ZS1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM0RDA1OCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjhBNzQ1IiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8ZyBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBpZD0id29ya2Zsb3ctYmciIGQ9Ik0wLDMgQzAsMS4zNDMxIDEuMzU1MiwwIDMuMDI3MDI3MDMsMCBMMzUsMCBMMzUsMjAgTDMuMDI3MDI3MDMsMjAgQzEuMzU1MiwyMCAwLDE4LjY1NjkgMCwxNyBMMCwzIFoiIGZpbGw9InVybCgjd29ya2Zsb3ctZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIj4KICAgICAgICA8dHNwYW4geD0iMjIuMTk4MTk4MiIgeT0iMTUiIGFyaWEtaGlkZGVuPSJ0cnVlIj5SPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgICA8dGV4dCBmaWxsPSIjRkZGRkZGIj4KICAgICAgICA8dHNwYW4geD0iMjIuMTk4MTk4MiIgeT0iMTQiPlI8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNSkiIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGQ9Ik0wIDBoNDYuOTM5QzQ4LjYyOSAwIDUwIDEuMzQzIDUwIDN2MTRjMCAxLjY1Ny0xLjM3IDMtMy4wNjEgM0gwVjB6IiBpZD0ic3RhdGUtYmciIGZpbGw9InVybCgjc3RhdGUtZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE1Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgICA8dGV4dCBmaWxsPSIjRkZGRkZGIj4KICAgICAgICA8dHNwYW4geD0iNCIgeT0iMTQiPnBhc3Npbmc8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8cGF0aCBmaWxsPSIjOTU5REE1IiBkPSJNMTEgM2MtMy44NjggMC03IDMuMTMyLTcgN2E2Ljk5NiA2Ljk5NiAwIDAgMCA0Ljc4NiA2LjY0MWMuMzUuMDYyLjQ4Mi0uMTQ4LjQ4Mi0uMzMyIDAtLjE2Ni0uMDEtLjcxOC0uMDEtMS4zMDQtMS43NTguMzI0LTIuMjEzLS40MjktMi4zNTMtLjgyMi0uMDc5LS4yMDItLjQyLS44MjMtLjcxNy0uOTktLjI0NS0uMTMtLjU5NS0uNDU0LS4wMS0uNDYzLjU1Mi0uMDA5Ljk0Ni41MDggMS4wNzcuNzE4LjYzIDEuMDU4IDEuNjM2Ljc2IDIuMDM5LjU3Ny4wNjEtLjQ1NS4yNDUtLjc2MS40NDYtLjkzNi0xLjU1Ny0uMTc1LTMuMTg1LS43NzktMy4xODUtMy40NTYgMC0uNzYyLjI3MS0xLjM5Mi43MTgtMS44ODItLjA3LS4xNzUtLjMxNS0uODkyLjA3LTEuODU1IDAgMCAuNTg2LS4xODMgMS45MjUuNzE4YTYuNSA2LjUgMCAwIDEgMS43NS0uMjM2IDYuNSA2LjUgMCAwIDEgMS43NS4yMzZjMS4zMzgtLjkxIDEuOTI1LS43MTggMS45MjUtLjcxOC4zODUuOTYzLjE0IDEuNjguMDcgMS44NTUuNDQ2LjQ5LjcxNyAxLjExMi43MTcgMS44ODIgMCAyLjY4Ni0xLjYzNiAzLjI4LTMuMTk0IDMuNDU2LjI1NC4yMTkuNDczLjYzOS40NzMgMS4yOTUgMCAuOTM2LS4wMDkgMS42ODktLjAwOSAxLjkyNSAwIC4xODQuMTMxLjQwMi40ODEuMzMyQTcuMDExIDcuMDExIDAgMCAwIDE4IDEwYzAtMy44NjctMy4xMzMtNy03LTd6Ij48L3BhdGg+CiAgPC9nPgo8L3N2Zz4KCg==" alt="R-CMD-check" /></a></td>
+<td align="left"><a href="https://app.codecov.io/gh/RMI-PACTA/pacta.multi.loanbook.plot?branch=main"><svg id="svg_e8d472440bd8665861fb" alt="Codecov test coverage" width="112" height="20" viewBox="0 0 112 20">
+    <linearGradient id="svg_e8d472440bd8665861fb_b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop>
+        <stop offset="1" stop-opacity=".1"></stop>
+    </linearGradient>
+    <mask id="svg_e8d472440bd8665861fb_a">
+        <rect width="112" height="20" rx="3" fill="#fff" />
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#555" d="M0 0h73v20H0z" />
+        <path fill="#e05d44" d="M73 0h39v20H73z" />
+        <path fill="url(#b)" d="M0 0h112v20H0z" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+        <text x="46" y="15" fill="#010101" fill-opacity=".3">codecov</text>
+        <text x="46" y="14">codecov</text>
+        <text x="93" y="15" fill="#010101" fill-opacity=".3">0%</text>
+        <text x="93" y="14">0%</text>
+    </g>
+    <svg viewBox="120 -8 60 60">
+        <path d="M23.013 0C10.333.009.01 10.22 0 22.762v.058l3.914 2.275.053-.036a11.291 11.291 0 0 1 8.352-1.767 10.911 10.911 0 0 1 5.5 2.726l.673.624.38-.828c.368-.802.793-1.556 1.264-2.24.19-.276.398-.554.637-.851l.393-.49-.484-.404a16.08 16.08 0 0 0-7.453-3.466 16.482 16.482 0 0 0-7.705.449C7.386 10.683 14.56 5.016 23.03 5.01c4.779 0 9.272 1.84 12.651 5.18 2.41 2.382 4.069 5.35 4.807 8.591a16.53 16.53 0 0 0-4.792-.723l-.292-.002a16.707 16.707 0 0 0-1.902.14l-.08.012c-.28.037-.524.074-.748.115-.11.019-.218.041-.327.063-.257.052-.51.108-.75.169l-.265.067a16.39 16.39 0 0 0-.926.276l-.056.018c-.682.23-1.36.511-2.016.838l-.052.026c-.29.145-.584.305-.899.49l-.069.04a15.596 15.596 0 0 0-4.061 3.466l-.145.175c-.29.36-.521.666-.723.96-.17.247-.34.513-.552.864l-.116.199c-.17.292-.32.57-.449.824l-.03.057a16.116 16.116 0 0 0-.843 2.029l-.034.102a15.65 15.65 0 0 0-.786 5.174l.003.214a21.523 21.523 0 0 0 .04.754c.009.119.02.237.032.355.014.145.032.29.049.432l.01.08c.01.067.017.133.026.197.034.242.074.48.119.72.463 2.419 1.62 4.836 3.345 6.99l.078.098.08-.095c.688-.81 2.395-3.38 2.539-4.922l.003-.029-.014-.025a10.727 10.727 0 0 1-1.226-4.956c0-5.76 4.545-10.544 10.343-10.89l.381-.014a11.403 11.403 0 0 1 6.651 1.957l.054.036 3.862-2.237.05-.03v-.056c.006-6.08-2.384-11.793-6.729-16.089C34.932 2.361 29.16 0 23.013 0" fill="#F01F7A" fill-rule="evenodd" />
+    </svg></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/pacta.multi.loanbook.plot/commits/main"><code>7182557</code></a></td>
+<td align="left"><a href="https://github.com/MonikaFu/">@MonikaFu</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="workflows-and-docker-images">Workflows and Docker Images</h2>
+<h3 id="transition-monitor-1">Transition Monitor</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repo</th>
+<th align="left">Lifecycle</th>
+<th align="left">Docker_Status</th>
+<th align="left">Latest_SHA</th>
+<th align="left">Maintainer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.scenario.preparation">workflow.scenario.preparation</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.scenario.preparation/actions/workflows/docker.yml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5kb2NrZXIgLSBwYXNzaW5nPC90aXRsZT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id29ya2Zsb3ctZmlsbCIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM0NDRENTYiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI0MjkyRSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJzdGF0ZS1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM0RDA1OCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjhBNzQ1IiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8ZyBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBpZD0id29ya2Zsb3ctYmciIGQ9Ik0wLDMgQzAsMS4zNDMxIDEuMzU1MiwwIDMuMDI3MDI3MDMsMCBMNjUsMCBMNjUsMjAgTDMuMDI3MDI3MDMsMjAgQzEuMzU1MiwyMCAwLDE4LjY1NjkgMCwxNyBMMCwzIFoiIGZpbGw9InVybCgjd29ya2Zsb3ctZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIj4KICAgICAgICA8dHNwYW4geD0iMjIuMTk4MTk4MiIgeT0iMTUiIGFyaWEtaGlkZGVuPSJ0cnVlIj5kb2NrZXI8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+ZG9ja2VyPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjUpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="docker" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.scenario.preparation/commits/main"><code>361bdc1</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.data.preparation">workflow.data.preparation</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.data.preparation/actions/workflows/docker.yml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTUiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5kb2NrZXIgLSBwYXNzaW5nPC90aXRsZT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id29ya2Zsb3ctZmlsbCIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM0NDRENTYiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI0MjkyRSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJzdGF0ZS1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzM0RDA1OCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjhBNzQ1IiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8ZyBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBpZD0id29ya2Zsb3ctYmciIGQ9Ik0wLDMgQzAsMS4zNDMxIDEuMzU1MiwwIDMuMDI3MDI3MDMsMCBMNjUsMCBMNjUsMjAgTDMuMDI3MDI3MDMsMjAgQzEuMzU1MiwyMCAwLDE4LjY1NjkgMCwxNyBMMCwzIFoiIGZpbGw9InVybCgjd29ya2Zsb3ctZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIj4KICAgICAgICA8dHNwYW4geD0iMjIuMTk4MTk4MiIgeT0iMTUiIGFyaWEtaGlkZGVuPSJ0cnVlIj5kb2NrZXI8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+ZG9ja2VyPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjUpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQ2LjkzOUM0OC42MjkgMCA1MCAxLjM0MyA1MCAzdjE0YzAgMS42NTctMS4zNyAzLTMuMDYxIDNIMFYweiIgaWQ9InN0YXRlLWJnIiBmaWxsPSJ1cmwoI3N0YXRlLWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgIDx0c3BhbiB4PSI0IiB5PSIxNSI+cGFzc2luZzwvdHNwYW4+CiAgICAgIDwvdGV4dD4KICAgICAgPHRleHQgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgPHRzcGFuIHg9IjQiIHk9IjE0Ij5wYXNzaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9nPgogICAgPHBhdGggZmlsbD0iIzk1OURBNSIgZD0iTTExIDNjLTMuODY4IDAtNyAzLjEzMi03IDdhNi45OTYgNi45OTYgMCAwIDAgNC43ODYgNi42NDFjLjM1LjA2Mi40ODItLjE0OC40ODItLjMzMiAwLS4xNjYtLjAxLS43MTgtLjAxLTEuMzA0LTEuNzU4LjMyNC0yLjIxMy0uNDI5LTIuMzUzLS44MjItLjA3OS0uMjAyLS40Mi0uODIzLS43MTctLjk5LS4yNDUtLjEzLS41OTUtLjQ1NC0uMDEtLjQ2My41NTItLjAwOS45NDYuNTA4IDEuMDc3LjcxOC42MyAxLjA1OCAxLjYzNi43NiAyLjAzOS41NzcuMDYxLS40NTUuMjQ1LS43NjEuNDQ2LS45MzYtMS41NTctLjE3NS0zLjE4NS0uNzc5LTMuMTg1LTMuNDU2IDAtLjc2Mi4yNzEtMS4zOTIuNzE4LTEuODgyLS4wNy0uMTc1LS4zMTUtLjg5Mi4wNy0xLjg1NSAwIDAgLjU4Ni0uMTgzIDEuOTI1LjcxOGE2LjUgNi41IDAgMCAxIDEuNzUtLjIzNiA2LjUgNi41IDAgMCAxIDEuNzUuMjM2YzEuMzM4LS45MSAxLjkyNS0uNzE4IDEuOTI1LS43MTguMzg1Ljk2My4xNCAxLjY4LjA3IDEuODU1LjQ0Ni40OS43MTcgMS4xMTIuNzE3IDEuODgyIDAgMi42ODYtMS42MzYgMy4yOC0zLjE5NCAzLjQ1Ni4yNTQuMjE5LjQ3My42MzkuNDczIDEuMjk1IDAgLjkzNi0uMDA5IDEuNjg5LS4wMDkgMS45MjUgMCAuMTg0LjEzMS40MDIuNDgxLjMzMkE3LjAxMSA3LjAxMSAwIDAgMCAxOCAxMGMwLTMuODY3LTMuMTMzLTctNy03eiI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cgo=" alt="docker" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.data.preparation/commits/main"><code>9beb13c</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.transition.monitor">workflow.transition.monitor</a></td>
+<td align="left"><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibGlmZWN5Y2xlOiBzdGFibGUiPjx0aXRsZT5saWZlY3ljbGU6IHN0YWJsZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1NSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjU1IiB3aWR0aD0iNDMiIGhlaWdodD0iMjAiIGZpbGw9IiM0YzEiLz48cmVjdCB3aWR0aD0iOTgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMjg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0NTAiPmxpZmVjeWNsZTwvdGV4dD48dGV4dCB4PSIyODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjQ1MCI+bGlmZWN5Y2xlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI3NTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjMzMCI+c3RhYmxlPC90ZXh0Pjx0ZXh0IHg9Ijc1NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzMwIj5zdGFibGU8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Lifecycle" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.transition.monitor/actions/workflows/build-Docker-image-triggers.yml"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzYiIGhlaWdodD0iMjAiPgogIDx0aXRsZT5Eb2NrZXIgYnVpbGQgJmFtcDsgdGVzdCAtIGZhaWxpbmc8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3b3JrZmxvdy1maWxsIiB4MT0iNTAlIiB5MT0iMCUiIHgyPSI1MCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzQ0NEQ1NiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjQyOTJFIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN0YXRlLWZpbGwiIHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRDczQTQ5IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNDQjI0MzEiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxnIGZvbnQtZmFtaWx5PSImIzM5O0RlamFWdSBTYW5zJiMzOTssVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICAgIDxwYXRoIGlkPSJ3b3JrZmxvdy1iZyIgZD0iTTAsMyBDMCwxLjM0MzEgMS4zNTUyLDAgMy4wMjcwMjcwMywwIEwxMzMsMCBMMTMzLDIwIEwzLjAyNzAyNzAzLDIwIEMxLjM1NTIsMjAgMCwxOC42NTY5IDAsMTcgTDAsMyBaIiBmaWxsPSJ1cmwoI3dvcmtmbG93LWZpbGwpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgPHRleHQgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgPHRzcGFuIHg9IjIyLjE5ODE5ODIiIHk9IjE1IiBhcmlhLWhpZGRlbj0idHJ1ZSI+RG9ja2VyIGJ1aWxkICZhbXA7IHRlc3Q8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICAgIDx0ZXh0IGZpbGw9IiNGRkZGRkYiPgogICAgICAgIDx0c3BhbiB4PSIyMi4xOTgxOTgyIiB5PSIxNCI+RG9ja2VyIGJ1aWxkICZhbXA7IHRlc3Q8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzMpIiBmb250LWZhbWlseT0iJiMzOTtEZWphVnUgU2FucyYjMzk7LFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICA8cGF0aCBkPSJNMCAwaDQwLjQ3QzQxLjg2OSAwIDQzIDEuMzQzIDQzIDN2MTRjMCAxLjY1Ny0xLjEzMiAzLTIuNTMgM0gwVjB6IiBpZD0ic3RhdGUtYmciIGZpbGw9InVybCgjc3RhdGUtZmlsbCkiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICA8dGV4dCBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgPHRzcGFuIHg9IjUiIHk9IjE1Ij5mYWlsaW5nPC90c3Bhbj4KICAgICAgPC90ZXh0PgogICAgICA8dGV4dCBmaWxsPSIjRkZGRkZGIj4KICAgICAgICA8dHNwYW4geD0iNSIgeT0iMTQiPmZhaWxpbmc8L3RzcGFuPgogICAgICA8L3RleHQ+CiAgICA8L2c+CiAgICA8cGF0aCBmaWxsPSIjOTU5REE1IiBkPSJNMTEgM2MtMy44NjggMC03IDMuMTMyLTcgN2E2Ljk5NiA2Ljk5NiAwIDAgMCA0Ljc4NiA2LjY0MWMuMzUuMDYyLjQ4Mi0uMTQ4LjQ4Mi0uMzMyIDAtLjE2Ni0uMDEtLjcxOC0uMDEtMS4zMDQtMS43NTguMzI0LTIuMjEzLS40MjktMi4zNTMtLjgyMi0uMDc5LS4yMDItLjQyLS44MjMtLjcxNy0uOTktLjI0NS0uMTMtLjU5NS0uNDU0LS4wMS0uNDYzLjU1Mi0uMDA5Ljk0Ni41MDggMS4wNzcuNzE4LjYzIDEuMDU4IDEuNjM2Ljc2IDIuMDM5LjU3Ny4wNjEtLjQ1NS4yNDUtLjc2MS40NDYtLjkzNi0xLjU1Ny0uMTc1LTMuMTg1LS43NzktMy4xODUtMy40NTYgMC0uNzYyLjI3MS0xLjM5Mi43MTgtMS44ODItLjA3LS4xNzUtLjMxNS0uODkyLjA3LTEuODU1IDAgMCAuNTg2LS4xODMgMS45MjUuNzE4YTYuNSA2LjUgMCAwIDEgMS43NS0uMjM2IDYuNSA2LjUgMCAwIDEgMS43NS4yMzZjMS4zMzgtLjkxIDEuOTI1LS43MTggMS45MjUtLjcxOC4zODUuOTYzLjE0IDEuNjguMDcgMS44NTUuNDQ2LjQ5LjcxNyAxLjExMi43MTcgMS44ODIgMCAyLjY4Ni0xLjYzNiAzLjI4LTMuMTk0IDMuNDU2LjI1NC4yMTkuNDczLjYzOS40NzMgMS4yOTUgMCAuOTM2LS4wMDkgMS42ODktLjAwOSAxLjkyNSAwIC4xODQuMTMxLjQwMi40ODEuMzMyQTcuMDExIDcuMDExIDAgMCAwIDE4IDEwYzAtMy44NjctMy4xMzMtNy03LTd6Ij48L3BhdGg+CiAgPC9nPgo8L3N2Zz4KCg==" alt=".github/workflows/build-Docker-image-triggers.yml" /></a></td>
+<td align="left"><a href="https://github.com/RMI-PACTA/workflow.transition.monitor/commits/main"><code>b041e3a</code></a></td>
+<td align="left"><a href="https://github.com/cjyetman/">@cjyetman</a></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
