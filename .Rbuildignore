@@ -3,5 +3,6 @@
 ^\.Rproj\.user$
 ^assets$
 ^README\.Rmd$
+^README\.html$
 ^\.github$
 ^\.lintr$
