@@ -35,7 +35,7 @@ of the Transition Monitor Docker image.
 | [pacta.data.scraping](https://github.com/RMI-PACTA/pacta.data.scraping)                         | [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)  | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.data.scraping/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.data.scraping/actions/workflows/R-CMD-check.yaml)                         | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.data.scraping/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.data.scraping?branch=main)                         | [`f0656a9`](https://github.com/RMI-PACTA/pacta.data.scraping/commits/main)             | [@cjyetman](https://github.com/cjyetman/) |
 | [pacta.data.preparation](https://github.com/RMI-PACTA/pacta.data.preparation)                   | [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)  | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.data.preparation/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.data.preparation/actions/workflows/R-CMD-check.yaml)                   | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.data.preparation/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.data.preparation?branch=main)                   | [`ed029ad`](https://github.com/RMI-PACTA/pacta.data.preparation/commits/main)          | [@cjyetman](https://github.com/cjyetman/) |
 | [pacta.portfolio.import](https://github.com/RMI-PACTA/pacta.portfolio.import)                   | [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)  | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.import/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.import/actions/workflows/R-CMD-check.yaml)                   | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.import/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.import?branch=main)                   | [`9d3ea19`](https://github.com/RMI-PACTA/pacta.portfolio.import/commits/main)          | [@cjyetman](https://github.com/cjyetman/) |
-| [pacta.portfolio.audit](https://github.com/RMI-PACTA/pacta.portfolio.audit)                     | [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)  | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml)                     | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.audit/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.audit?branch=main)                     | [`2e7bee7`](https://github.com/RMI-PACTA/pacta.portfolio.audit/commits/main)           | [@cjyetman](https://github.com/cjyetman/) |
+| [pacta.portfolio.audit](https://github.com/RMI-PACTA/pacta.portfolio.audit)                     | [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)  | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml)                     | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.audit/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.audit?branch=main)                     | [`f0b8d78`](https://github.com/RMI-PACTA/pacta.portfolio.audit/commits/main)           | [@cjyetman](https://github.com/cjyetman/) |
 | [pacta.portfolio.allocate](https://github.com/RMI-PACTA/pacta.portfolio.allocate)               | [![Lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)  | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.allocate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.allocate/actions/workflows/R-CMD-check.yaml)               | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.allocate/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.allocate?branch=main)               | [`b18e2e7`](https://github.com/RMI-PACTA/pacta.portfolio.allocate/commits/main)        | [@cjyetman](https://github.com/cjyetman/) |
 | [pacta.portfolio.report](https://github.com/RMI-PACTA/pacta.portfolio.report)                   | [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html) | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.report/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.report/actions/workflows/R-CMD-check.yaml)                   | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.report/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.portfolio.report?branch=main)                   | [`8330b97`](https://github.com/RMI-PACTA/pacta.portfolio.report/commits/main)          | [@MonikaFu](https://github.com/MonikaFu/) |
 | [pacta.executive.summary](https://github.com/RMI-PACTA/pacta.executive.summary)                 | [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html) | [![R-CMD-check](https://github.com/RMI-PACTA/pacta.executive.summary/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.executive.summary/actions/workflows/R-CMD-check.yaml)                 | [![Codecov test coverage](https://codecov.io/gh/RMI-PACTA/pacta.executive.summary/branch/main/graph/badge.svg)](https://app.codecov.io/gh/RMI-PACTA/pacta.executive.summary?branch=main)                 | [`398d73c`](https://github.com/RMI-PACTA/pacta.executive.summary/commits/main)         | [@MonikaFu](https://github.com/MonikaFu/) |
@@ -51,44 +51,6 @@ of the Transition Monitor Docker image.
 ## Workflows and Docker Images
 
 ### Transition Monitor
-
-    #> Waiting 106s for retry backoff ■
-    #> Waiting 106s for retry backoff ■■
-    #> Waiting 106s for retry backoff ■■■                             
-    #> Waiting 106s for retry backoff ■■■
-    #> Waiting 106s for retry backoff ■■■■
-    #> Waiting 106s for retry backoff ■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■                       
-    #> Waiting 106s for retry backoff ■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■                 
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■           
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■     
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 
-    #> Waiting 106s for retry backoff ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 | Repo                                                                                        | Lifecycle                                                                                                                       | Docker_Status                                                                                                                                                                                                                                                                            | Latest_SHA                                                                           | Maintainer                                      |
 |:--------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|:------------------------------------------------|
