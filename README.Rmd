@@ -64,12 +64,11 @@ knitr::kable(tm_table)
 ### PACTA for Supervisors
 
 ``` {r echo = FALSE, results = "asis"}
-transition_monitor_repos <- c(
-  "RMI-PACTA/pacta.multi.loanbook.analysis",
-  "RMI-PACTA/pacta.multi.loanbook.plot"
+supervisor_repos <- c(
+  "RMI-PACTA/pacta.multi.loanbook"
 )
 
-tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
+tm_table <- pacta.sit.rep::generate_package_table(supervisor_repos)
 knitr::kable(tm_table)
 
 ```
