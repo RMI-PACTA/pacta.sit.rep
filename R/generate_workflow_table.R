@@ -1,4 +1,4 @@
-#' Generate a table with worfklow information
+#' Generate a table with workflow information
 #'
 #' @param repo_paths A character vector with GH paths to the workflow
 #'   repositories

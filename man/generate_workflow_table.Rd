@@ -2,7 +2,7 @@
 % Please edit documentation in R/generate_workflow_table.R
 \name{generate_workflow_table}
 \alias{generate_workflow_table}
-\title{Generate a table with worfklow information}
+\title{Generate a table with workflow information}
 \usage{
 generate_workflow_table(repo_paths)
 }
@@ -21,7 +21,7 @@ A tibble with the following columns:
 }
 }
 \description{
-Generate a table with worfklow information
+Generate a table with workflow information
 }
 \examples{
 generate_workflow_table("RMI-PACTA/workflow.transition.monitor")
