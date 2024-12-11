@@ -1,7 +1,8 @@
 get_repos <- function(org) {
   repo_fetch <- gh::gh(
     "GET /orgs/{org}/repos", # nolint: non_portable_path
-    org = org, per_page  = 20L)
+    org = org, per_page = 20L
+  )
   all_repos <- repo_fetch
   while (
     grepl(

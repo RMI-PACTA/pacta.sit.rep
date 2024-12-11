@@ -60,12 +60,11 @@ check_workflows <- function(repo_fullname) {
 }
 
 workflow_summary <- function(
-  repo_fullname,
-  expected = c(
-    "R.yml",
-    "docker.yml"
-  )
-) {
+    repo_fullname,
+    expected = c(
+      "R.yml",
+      "docker.yml"
+    )) {
   workflows <- check_workflows(repo_fullname)
   workflow_summary <- list()
   for (wf in expected) {

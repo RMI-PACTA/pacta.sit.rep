@@ -20,4 +20,3 @@ experimental_workflows <- c(
   "RMI-PACTA/workflow.pacta.data.qa",
   "RMI-PACTA/workflow.pacta.report"
 )
-
