@@ -6,7 +6,9 @@ get_rulesets <- function(repo_fullname) {
         repo_fullname = repo_fullname
       )
     },
-    error = function(cond) return(NULL)
+    error = function(cond) {
+      return(NULL)
+    }
   )
   if (is.null(response)) {
     out <- NULL
@@ -34,7 +36,9 @@ get_ruleset_contents <- function(repo_fullname, ruleset_id) {
         ruleset_id = ruleset_id
       )
     },
-    error = function(cond) return(NULL)
+    error = function(cond) {
+      return(NULL)
+    }
   )
   if (is.null(response)) {
     out <- NULL
