@@ -37,7 +37,6 @@ banks_repos <- c(
 
 banks_table <- pacta.sit.rep::generate_package_table(banks_repos)
 knitr::kable(banks_table)
-
 ```
 
 ### Transition Monitor
@@ -58,7 +57,6 @@ transition_monitor_repos <- c(
 
 tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
 knitr::kable(tm_table)
-
 ```
 
 ### PACTA for Supervisors
@@ -70,7 +68,6 @@ supervisor_repos <- c(
 
 tm_table <- pacta.sit.rep::generate_package_table(supervisor_repos)
 knitr::kable(tm_table)
-
 ```
 
 ## Workflows and Docker Images
@@ -86,5 +83,4 @@ transition_monitor_workflows <- c(
 
 workflow_table <- pacta.sit.rep::generate_workflow_table(transition_monitor_workflows)
 knitr::kable(workflow_table)
-
 ```

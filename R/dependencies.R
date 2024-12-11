@@ -19,14 +19,12 @@ if (requireNamespace("memoise")) {
 }
 
 identify_if_dep <- function(
-  repo_fullname,
-  repos_to_check = list(
-    prod = c(prod_workflows, r2dii.repos),
-    experimental = experimental_workflows
-  ),
-  return_max = TRUE
-) {
-
+    repo_fullname,
+    repos_to_check = list(
+      prod = c(prod_workflows, r2dii.repos),
+      experimental = experimental_workflows
+    ),
+    return_max = TRUE) {
   dep_lists <- lapply(repos_to_check, function(repos) {
     deps <- lapply(
       X = repos,

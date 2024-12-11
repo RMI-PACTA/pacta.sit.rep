@@ -34,7 +34,6 @@ generate_workflow_table <- function(repo_paths) {
 }
 
 format_docker <- function(docker_status) {
-
   if (is.na(docker_status)) {
     return("No Docker check found.")
   }

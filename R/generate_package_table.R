@@ -57,7 +57,6 @@ format_lifecycle <- function(lifecycle_badge) {
 format_lifecycle_v <- Vectorize(format_lifecycle)
 
 format_status <- function(repo, r_cmd_check_status) {
-
   if (is.na(r_cmd_check_status)) {
     return("No R CMD check found.")
   }
@@ -68,7 +67,6 @@ format_status <- function(repo, r_cmd_check_status) {
 format_status_v <- Vectorize(format_status)
 
 format_coverage <- function(repo, test_coverage) {
-
   if (is.na(test_coverage)) {
     return("No test coverage found.")
   }
@@ -79,7 +77,6 @@ format_coverage <- function(repo, test_coverage) {
 format_coverage_v <- Vectorize(format_coverage)
 
 format_latest_sha <- function(repo, sha) {
-
   if (is.na(sha)) {
     return("`main` branch not found.")
   }
@@ -94,7 +91,6 @@ format_latest_sha <- function(repo, sha) {
 format_latest_sha_v <- Vectorize(format_latest_sha)
 
 format_maintainer <- function(maintainer) {
-
   if (is.na(maintainer)) {
     return("No maintainer found.")
   }
@@ -138,7 +134,6 @@ table_status <- function(repo_path) {
 }
 
 table_coverage <- function(repo_path) {
-
   badge_link <- glue::glue("(https://codecov.io/gh/{repo_path}/branch/main/graph/badge.svg)")
   cov_link <- glue::glue("(https://app.codecov.io/gh/{repo_path}?branch=main)")
 
@@ -181,7 +176,9 @@ fetch_main_sha <- function(repo_path) {
       "/repos/{repo}/branches/main",
       repo = repo_path
     ),
-    error = function(cond) return(NULL)
+    error = function(cond) {
+      return(NULL)
+    }
   )
 
   if (!is.null(response)) {

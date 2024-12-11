@@ -1,8 +1,7 @@
 get_codeowner <- function(
-  repo_fullname,
-  path = ".github/CODEOWNERS", # nolint: non_portable_path
-  format = TRUE
-) {
+    repo_fullname,
+    path = ".github/CODEOWNERS", # nolint: non_portable_path
+    format = TRUE) {
   content <- get_gh_text_file(repo_fullname, file_path = path)
   if (is.null(content)) {
     return(NULL)

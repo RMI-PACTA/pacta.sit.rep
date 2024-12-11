@@ -7,7 +7,9 @@ get_gh_text_file <- function(repo_fullname, file_path) {
         file_path = file_path
       )
     },
-    error = function(cond) return(NULL)
+    error = function(cond) {
+      return(NULL)
+    }
   )
   if (is.null(response)) {
     out <- NULL
@@ -42,7 +44,9 @@ get_gh_dir_listing <- function(repo_fullname, dir_path) {
         dir_path = dir_path
       )
     },
-    error = function(cond) return(NULL)
+    error = function(cond) {
+      return(NULL)
+    }
   )
   if (is.null(response)) {
     out <- NULL
