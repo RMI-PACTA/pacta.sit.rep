@@ -13,9 +13,21 @@ format_name_badge <- function(repo_path) {
 }
 
 format_lifecycle_badge <- function(lifecycle) {
+  stopifnot(
+    lifecycle %in% c("experimental", "stable", "deprecated", "superseded")
+    )
+
+  lifecycle_badge_url <- switch(
+    lifecycle,
+    experimental = "https://lifecycle.r-lib.org/reference/figures/lifecycle-experimental.svg",
+    stable = "https://lifecycle.r-lib.org/reference/figures/lifecycle-stable.svg",
+    deprecated = "https://lifecycle.r-lib.org/reference/figures/lifecycle-deprecated.svg",
+    superseded = "https://lifecycle.r-lib.org/reference/figures/lifecycle-superseded.svg"
+  )
+
   format_badge_url(
     display = glue::glue(
-      "![](https://img.shields.io/badge/lifecycle-{lifecycle}-none.svg?labelColor=%23444d56&amp;color=%2334d058)"
+      "![]({lifecycle_badge_url})",
     ),
     path = glue::glue("https://lifecycle.r-lib.org/articles/stages.html#{lifecycle}")
   )
