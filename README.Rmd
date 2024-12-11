@@ -28,49 +28,107 @@ Code health is reported at the level of the R package, and at the level of the T
 ### PACTA for Banks
 
 ``` {r echo = FALSE, results = "asis"}
-banks_repos <- c(
-  "RMI-PACTA/r2dii.data",
-  "RMI-PACTA/r2dii.match",
-  "RMI-PACTA/r2dii.analysis",
-  "RMI-PACTA/r2dii.plot"
+banks_repos <- list(
+  c(
+    path = "RMI-PACTA/r2dii.data",
+    lifecycle = "stable",
+    ci_check = "R.yml"
+  ),
+  c(
+    path = "RMI-PACTA/r2dii.match",
+    lifecycle = "stable",
+    ci_check = "R.yml"
+  ),
+  c(
+    path = "RMI-PACTA/r2dii.analysis",
+    lifecycle = "stable",
+    ci_check = "R.yml"
+  ),
+  c(
+    path = "RMI-PACTA/r2dii.plot",
+    lifecycle = "experimental",
+    ci_check = "R.yml"
+  )
 )
 
 banks_table <- pacta.sit.rep::generate_package_table(banks_repos)
 knitr::kable(banks_table)
-
 ```
 
 ### Transition Monitor
 
 ``` {r echo = FALSE, results = "asis"}
-transition_monitor_repos <- c(
-  "RMI-PACTA/pacta.data.validation",
-  "RMI-PACTA/pacta.scenario.data.preparation",
-  "RMI-PACTA/pacta.data.scraping",
-  "RMI-PACTA/pacta.data.preparation",
-  "RMI-PACTA/pacta.portfolio.import",
-  "RMI-PACTA/pacta.portfolio.audit",
-  "RMI-PACTA/pacta.portfolio.allocate",
-  "RMI-PACTA/pacta.portfolio.report",
-  "RMI-PACTA/pacta.executive.summary",
-  "RMI-PACTA/pacta.portfolio.utils"
+transition_monitor_repos <- list(
+  c(
+    path = "RMI-PACTA/pacta.scenario.data.preparation",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.scenario.data.preparation",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.data.scraping",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.data.preparation",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.portfolio.import",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.portfolio.audit",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.portfolio.allocate",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  
+  c(
+    path = "RMI-PACTA/pacta.portfolio.report",
+    lifecycle = "experimental",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.executive.summary",
+    lifecycle = "experimental",
+    ci_check = "R-CMD-check.yaml"
+  ),
+  c(
+    path = "RMI-PACTA/pacta.portfolio.utils",
+    lifecycle = "stable",
+    ci_check = "R-CMD-check.yaml"
+  )
 )
 
 tm_table <- pacta.sit.rep::generate_package_table(transition_monitor_repos)
 knitr::kable(tm_table)
-
 ```
 
 ### PACTA for Supervisors
 
 ``` {r echo = FALSE, results = "asis"}
-supervisor_repos <- c(
-  "RMI-PACTA/pacta.multi.loanbook"
+supervisor_repos <- list(
+  c(
+    path =   "RMI-PACTA/pacta.multi.loanbook",
+    lifecycle = "experimental",
+    ci_check = "R-CMD-check.yaml"
+  )
 )
 
 tm_table <- pacta.sit.rep::generate_package_table(supervisor_repos)
 knitr::kable(tm_table)
-
 ```
 
 ## Workflows and Docker Images
@@ -78,13 +136,29 @@ knitr::kable(tm_table)
 ### Transition Monitor
 
 ``` {r echo = FALSE, results = "asis"}
-transition_monitor_workflows <- c(
-  "RMI-PACTA/workflow.scenario.preparation",
-  "RMI-PACTA/workflow.data.preparation",
-  "RMI-PACTA/workflow.transition.monitor"
+transition_monitor_workflows <- list(
+  c(
+    path = "RMI-PACTA/workflow.scenario.preparation",
+    lifecycle = "stable",
+    ci_check = "docker.yml"
+  ),
+  c(
+    path = "RMI-PACTA/workflow.benchmark.preparation",
+    lifecycle = "experimental",
+    ci_check = "docker.yml"
+  ),
+  c(
+    path = "RMI-PACTA/workflow.data.preparation",
+    lifecycle = "stable",
+    ci_check = "docker.yml"
+  ),
+  c(
+    path = "RMI-PACTA/workflow.transition.monitor",
+    lifecycle = "stable",
+    ci_check = "build-Docker-image-triggers.yml"
+  )
 )
 
 workflow_table <- pacta.sit.rep::generate_workflow_table(transition_monitor_workflows)
 knitr::kable(workflow_table)
-
 ```
