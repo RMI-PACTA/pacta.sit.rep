@@ -15,10 +15,9 @@ format_name_badge <- function(repo_path) {
 format_lifecycle_badge <- function(lifecycle) {
   stopifnot(
     lifecycle %in% c("experimental", "stable", "deprecated", "superseded")
-    )
+  )
 
-  lifecycle_badge_url <- switch(
-    lifecycle,
+  lifecycle_badge_url <- switch(lifecycle,
     experimental = "https://lifecycle.r-lib.org/reference/figures/lifecycle-experimental.svg",
     stable = "https://lifecycle.r-lib.org/reference/figures/lifecycle-stable.svg",
     deprecated = "https://lifecycle.r-lib.org/reference/figures/lifecycle-deprecated.svg",

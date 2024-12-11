@@ -18,7 +18,7 @@ test_that("returns correct structure and data", {
     "coverage",
     "version",
     "maintainer"
-    )
+  )
 
   expect_true(tibble::is_tibble(result))
   expect_equal(ncol(result), 6)

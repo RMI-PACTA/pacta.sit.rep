@@ -94,7 +94,6 @@ transition_monitor_repos <- list(
     lifecycle = "stable",
     ci_check = "R-CMD-check.yaml"
   ),
-  
   c(
     path = "RMI-PACTA/pacta.portfolio.report",
     lifecycle = "experimental",
@@ -121,7 +120,7 @@ knitr::kable(tm_table)
 ``` {r echo = FALSE, results = "asis"}
 supervisor_repos <- list(
   c(
-    path =   "RMI-PACTA/pacta.multi.loanbook",
+    path = "RMI-PACTA/pacta.multi.loanbook",
     lifecycle = "experimental",
     ci_check = "R-CMD-check.yaml"
   )
