@@ -51,3 +51,33 @@ prod_checks <- function(repo_json) {
 if (requireNamespace("memoise")) {
   prod_checks <- memoise::memoise(prod_checks)
 }
+
+format_lifecycle <- function(lifecycle_badge) {
+  if (is.na(lifecycle_badge)) {
+    return("No lifecycle badge found.")
+  }
+
+  desc <- "![Lifecycle]"
+  link <- "https://lifecycle.r-lib.org/articles/stages.html"
+
+  glue::glue("[{desc}({lifecycle_badge})]({link})")
+}
+
+table_lifecycle <- function(repo_path) {
+  readme <- get_gh_text_file(repo_path, file_path = "README.md")
+
+  if (is.null(readme)) {
+    return(NA_character_)
+  }
+
+  pattern <- "https://img.shields.io/badge/lifecycle-\\S+.svg"
+
+  lifecycle_badge <- readme[grepl(pattern, readme)][[1L]] # nolint: regex_subset_linter
+  lifecycle_badge <- gsub(".*(https[^)]*\\.svg).*", "\\1", lifecycle_badge)
+
+  if (length(lifecycle_badge) == 0L) {
+    return(NA_character_)
+  }
+
+  return(lifecycle_badge)
+}
