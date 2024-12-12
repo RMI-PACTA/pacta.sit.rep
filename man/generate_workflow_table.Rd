@@ -10,9 +10,11 @@ generate_workflow_table(repo_vectors)
 \item{repo_vectors}{A list of named character vectors. Each character vector
 should contain:
 \itemize{
-\item path - the shortpath to the GitHub repository, incl. org (e.g. "RMI-PACTA/workflow.transition.monitor")
+\item path - the shortpath to the GitHub repository, including organization
+(e.g. "RMI-PACTA/workflow.transition.monitor")
 \item lifecycle - the lifecycle badge status (e.g. "stable", "experimental")
-\item ci_check - the name of the CI check file (e.g. "build-Docker-image-triggers.yml")
+\item ci_check - the name of the CI check file
+(e.g. "build-Docker-image-triggers.yml")
 }}
 }
 \value{
