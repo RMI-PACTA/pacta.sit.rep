@@ -1,8 +1,9 @@
 #' Generate a table with R package information
 #'
 #' @param repo_vectors A list of named character vectors. Each character vector
-#' should contain:
-#' * path - the shortpath to the GitHub repository, incl. org (e.g. "RMI-PACTA/r2dii.data")
+#'   should contain:
+#' * path - the shortpath to the GitHub repository, including organization
+#'   (e.g. "RMI-PACTA/r2dii.data")
 #' * lifecycle - the lifecycle badge status (e.g. "stable", "experimental")
 #' * ci_check - the name of the CI check file (e.g. "R-CMD-check.yaml")
 #
@@ -46,9 +47,11 @@ generate_package_table <- function(repo_vectors) {
 #'
 #' @param repo_vectors A list of named character vectors. Each character vector
 #' should contain:
-#' * path - the shortpath to the GitHub repository, incl. org (e.g. "RMI-PACTA/workflow.transition.monitor")
+#' * path - the shortpath to the GitHub repository, including organization
+#'  (e.g. "RMI-PACTA/workflow.transition.monitor")
 #' * lifecycle - the lifecycle badge status (e.g. "stable", "experimental")
-#' * ci_check - the name of the CI check file (e.g. "build-Docker-image-triggers.yml")
+#' * ci_check - the name of the CI check file
+#'  (e.g. "build-Docker-image-triggers.yml")
 #'
 #' @return A formatted sitrep tibble.
 #'
@@ -88,7 +91,7 @@ check_inputs <- function(repo_vectors) {
   stopifnot(
     is.list(repo_vectors),
     all(purrr::map_lgl(repo_vectors, is.character)),
-    all(purrr::map_lgl(repo_vectors, ~ length(.x) == 3)),
+    all(purrr::map_lgl(repo_vectors, ~ length(.x) == 3L)),
     all(
       purrr::map_lgl(
         repo_vectors,
