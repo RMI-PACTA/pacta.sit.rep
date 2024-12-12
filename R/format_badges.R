@@ -17,11 +17,12 @@ format_lifecycle_badge <- function(lifecycle) {
     lifecycle %in% c("experimental", "stable", "deprecated", "superseded")
   )
 
-  lifecycle_badge_url <- switch(lifecycle,
-                                experimental = "https://lifecycle.r-lib.org/reference/figures/lifecycle-experimental.svg", # nolint: line_length_linter
-                                stable = "https://lifecycle.r-lib.org/reference/figures/lifecycle-stable.svg", # nolint: line_length_linter
-                                deprecated = "https://lifecycle.r-lib.org/reference/figures/lifecycle-deprecated.svg", # nolint: line_length_linter
-                                superseded = "https://lifecycle.r-lib.org/reference/figures/lifecycle-superseded.svg" # nolint: line_length_linter
+  lifecycle_badge_url <- switch(
+    lifecycle,
+    experimental = "https://lifecycle.r-lib.org/reference/figures/lifecycle-experimental.svg", # nolint: line_length_linter
+    stable = "https://lifecycle.r-lib.org/reference/figures/lifecycle-stable.svg", # nolint: line_length_linter
+    deprecated = "https://lifecycle.r-lib.org/reference/figures/lifecycle-deprecated.svg", # nolint: line_length_linter
+    superseded = "https://lifecycle.r-lib.org/reference/figures/lifecycle-superseded.svg" # nolint: line_length_linter
   )
 
   format_badge_url(
