@@ -16,12 +16,12 @@ knitr::opts_chunk$set(
 # pacta.sit.rep <img src="assets/images/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Lifecycle:experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 This repository generates a simple situation report of the overall code health of the PACTA ecosystem.
 
-Code health is reported at the level of the R package, and at the level of the Transition Monitor Docker image. 
+Code health is reported at the level of the R package, and at the level of the Docker image. 
 
 ## R Packages
 
@@ -55,7 +55,7 @@ banks_table <- pacta.sit.rep::generate_package_table(banks_repos)
 knitr::kable(banks_table)
 ```
 
-### Transition Monitor
+### PACTA for Investors
 
 ``` {r echo = FALSE, results = "asis"}
 transition_monitor_repos <- list(
@@ -127,7 +127,7 @@ knitr::kable(tm_table)
 
 ## Workflows and Docker Images
 
-### Transition Monitor
+### PACTA for Investors
 
 ``` {r echo = FALSE, results = "asis"}
 transition_monitor_workflows <- list(
