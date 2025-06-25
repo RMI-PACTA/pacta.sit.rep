@@ -14,7 +14,7 @@ output: github_document
 
 This repository generates a simple situation report of the overall code health of the PACTA ecosystem.
 
-Code health is reported at the level of the R package, and at the level of the Transition Monitor Docker image. 
+Code health is reported at the level of the R package, and at the level of the Docker image. 
 
 ## R Packages
 
@@ -31,7 +31,7 @@ Code health is reported at the level of the R package, and at the level of the T
 
 
 
-### Transition Monitor
+### PACTA for Investors
 
 
 
@@ -61,7 +61,7 @@ Code health is reported at the level of the R package, and at the level of the T
 
 ## Workflows and Docker Images
 
-### Transition Monitor
+### PACTA for Investors
 
 
 
